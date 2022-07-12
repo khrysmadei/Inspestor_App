@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--brown planthopper-->
+    <string name="bph_name">Brown Planthopper</string>
+    <string name="bph_sci">Nilaparvata lugens</string>
+    <string name="bph_des">In the brown planthopper, Nilaparvata lugens, which is one of the most important pests of rice,
+                            honeydew-associated microbes elicited plant defences and even the release of plant volatiles (Wari et al., 2019).</string>
+    <!--<string name="ref1">https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj5scrc6uH4AhW-pVYBHQOSDtgQFnoECA8QAw&url=https%3A%2F%2Fwww.sciencedirect.com%2Ftopics%2Fagricultural-and-biological-sciences%2Fbrown-planthopper%23%3A~%3Atext%3DIn%2520the%2520brown%2520planthopper%252C%2520Nilaparvata%2Cet%2520al.%252C%25202019).&usg=AOvVaw3efUg4B2Ygw3TKMtsiRhSV</string>
+    -->
+    <string name="bph_pesticide">PHENTHOATE 500 g/L \nPHENTHOATE+BPMC 250 g/L \nCYPERMETHRIN 50g/L </string>
+
+    <!--green planthopper-->
+    <string name="gph_name">Green Planthopper</string>
+    <string name="gph_sci">Nephotettix nigropictus</string>
+    <string name="gph_des">A leafhopper is the common name for any species from the family Cicadellidae. These minute insects, colloquially known as hoppers,
+                            are plant feeders that suck plant sap from grass, shrubs, or trees. Their hind legs are modified for jumping, and are covered with
+                            hairs that facilitate the spreading of a secretion over their bodies that acts as a water repellent and
+                            carrier of pheromones.[1] They undergo a partial metamorphosis, and have various host associations, varying
+                            from very generalized to very specific. Some species have a cosmopolitan distribution, or occur throughout the
+                            temperate and tropical regions. Some are pests or vectors of plant viruses and phytoplasmas.[1] The family is
+                            distributed all over the world, and constitutes the second-largest hemipteran family, with at least 20,000 described species.</string>
+    <!--<string name="ref2">https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj5scrc6uH4AhW-pVYBHQOSDtgQFnoECA8QAw&url=https%3A%2F%2Fwww.sciencedirect.com%2Ftopics%2Fagricultural-and-biological-sciences%2Fbrown-planthopper%23%3A~%3Atext%3DIn%2520the%2520brown%2520planthopper%252C%2520Nilaparvata%2Cet%2520al.%252C%25202019).&usg=AOvVaw3efUg4B2Ygw3TKMtsiRhSV</string>
+    -->
+    <string name="gph_pesticide">LAMBDA-CYHALOTHRIN 25 g/L \nCYPERMETHRIN 50 g/L \nPHENTOATE 500g/L</string>
+
+    <!--rice bug-->
+    <string name="rb_name">Rice Bug</string>
+    <string name="rb_sci">Leptocorisa oratorius</string>
+    <string name="rb_des">The most common species of rice bug are Leptocorisa oratorius F. and Leptocorisa acuta Thunberg.</string>
+    <!-- <string name="ref3">https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjytbyJ7eH4AhW8hVYBHQnGDtgQFnoECA0QAw&url=http%3A%2F%2Fwww.knowledgebank.irri.org%2Ftraining%2Ffact-sheets%2Fpest-management%2Finsects%2Fitem%2Frice-bug%23%3A~%3Atext%3DThe%2520most%2520common%2520species%2520of%2Cand%2520Leptocorisa%2520acuta%2520Thunberg.&usg=AOvVaw0kyJvga40iVFoIsgdyu45D</string>
+     -->
+    <string name="rb_pesticide">LAMBDA-CYHALOTHRIN 25 g/L \nDIAZINON 600 g/L \nN CYPERMETHRIn 50g/L</string>
+
+    <!--rice black bug-->
+    <string name="rbb_name">Rice Black Bug</string>
+    <string name="rbb_sci">Oryza sativa</string>
+    <string name="rbb_des">The Malayan Rice Black bug is a serious invasive pest of rice (Oryza sativa) affecting some of the islands
+                            of Philippine Archipelago. It belongs to Order Hemiptera and Family Pentatomidae. Its scientific name is Scotinophora coarctata
+                            (Fabricious). Formerly, it is known as Podops coarctata (Griet and Lever, 1969).</string>
+    <!--<string name="ref4">https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjK9Je28OH4AhUfl1YBHTsLBNgQFnoECAUQAw&url=https%3A%2F%2Fwww.fftc.org.tw%2Fhtmlarea_file%2Factivities%2F20110719102459%2F12.pdf&usg=AOvVaw1aNls8gcbeIv0jKLmaDw6S</string>
+    -->
+    <string name="rbb_pesticide">DELTAMETHRIN 25 g/L \nBETA-CYPERMETHRIN 25 g/L \nAZADIRACHTIN 3g/L</string>
+
+    <!--rice grain bug-->
+    <string name="rgb_name">Rice Grain Bug</string>
+    <string name="rgb_sci"> Paraeuscosmetus pallicomis</string>
+    <string name="rgb_des">The world population continues to rise steeply every year, this rapid growth must be balanced by a sufficient increase in food,
+        clothing, and housing. Rice is the staple food for a majority of Indonesians, thus its availability must be preserved. National food security has
+        experienced stagnation and is not yet adequate to fulfill the dietary needs of the country. In efforts to increase the production of rice, the
+        influence of various biotic and abiotic factors plays a determining role. One such factor is plant-destroying organisms such as mice, rice white
+        stemborers, brown planthoppers, rice tungro virus, and the attacks of new pests like the rice grain bug, Paraeuscosmetus pallicomis Dallas
+        (Hemiptera: Lygaeidae) (Patta et al. 2009).</string>
+    <!--<string name="ref5">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5584826/</string>-->
+    <string name="rgb_pesticide">LAMBDA-CYHALOTHRIN 25 g/L \nN CYPERMETHRIN 50g/L \nDIAZINON 600 g/L</string>
+
+    <!--Leaffolder-->
+    <string name="lf_name">Rice Grain Bug</string>
+    <string name="lf_sci"> Cnaphalocrocis medinalis</string>
+    <string name="lf_des">TThe adult rice leaffolder is a yellow-brown moth. Leaffolder caterpillars fold the rice leaves around
+themselves and attach the leaf margins together with silk strands. Each female lays around 300 eggs at
+night during a lifecycle of three to 10 days. Larvae are yellow, turn yellowish‐green with brown heads as
+they mature, and are about 12‐25 mm long. Each larva can make two to four folded leaves. Pupa is about
+9-12 mm long and is found inside the rolled leaf. Adults are yellow brown in color. Adults usually emerge in
+the evening. Females lay eggs at night.</string>
+    <!--<string name="ref5">https://pdf.usaid.gov/pdf_docs/PA00K8XK.pdf</string>-->
+    <string name="lf_pesticide">ETOFENPROX 25g/L \nCYPERMETHRIN 55 g/L n\DIAZINON 600g/L</string>
+
+</resources>

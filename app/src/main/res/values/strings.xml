@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Inspestor</string>
+    <string name="app_motto">Your insect pest detector.</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Capture</string>
+    <string name="library">Six Major Insect Pest in Rice Fields</string>
+    <string name="lib_title">LIBRARY</string>
+    <string name="title_activity_insect_library">insect_library</string>
+
+    <!--navigation-->
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <!--result-->
+    <string name="result_title">INSECT RESULT</string>
+    <string name="result_sub">Recommended active chemical content in Pesticide</string>
+    <string name="pest_name">Insect Pest Name</string>
+    <string name="pest_reco">Pesticide Recommendation</string>
+
+    <!-- library
+    <string name="bph_name">Brown Planthopper</string>
+    <string name="bph_scientific">Nilaparvata lugens</string>
+
+    <string name="gph_name">Green Planthopper</string>
+    <string name="gph_scientific">Cicadella viridis</string>
+
+    <string name="rb_name">Rice Bug</string>
+    <string name="rb_scientific">Leptocorisa oratorius</string>
+
+    <string name="rgb_name">Rice Grain Bug</string>
+    <string name="rgb_scientific">Paraeuscosmetus pallicomis</string>
+
+    <string name="rbb_name">Rice Black Bug</string>
+    <string name="rbb_scientific">Scotinophara coarctata (Fabricius)</string>
+    -->
+
+    <!-- instructions-->
+    <string name="manual">How to identify insect using Inspestor</string>
+    <string name="man_sub">Instructions to use our app:</string>
+    <string name="one">1. To accurately detect insect pests, the lighting should not be directed to the insect,and the camera should focus on the insect.</string>
+    <string name="two">2. Click on the camera button to capture an insect pest or the gallery to upload an image.</string>
+    <string name="three">3. After capturing/uploading, click OK to process the image.</string>
+    <string name="four">4. Inspestor will provide results of the kind of insect pest and then recommend generic pesticides for users to eliminate insect pests.</string>
+</resources>
