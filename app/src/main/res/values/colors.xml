@@ -8,7 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <!--app background-->
-    <color name="app_bg">#FDFFF6</color>
+    <color name="app_bg">#FDF3E6</color>
+    <color name="clkble_bg">#E1D4CA</color>
 
     <!--title text color green-->
     <color name="title_color">#459354</color>
@@ -19,5 +20,5 @@
     <!--sub text color green-->
     <color name="sub_color">#EBDC84</color>
     <!--buttons-->
-    <color name="btn_color">#2d9e64</color>
+    <color name="btn_color">#67545A</color>
 </resources>

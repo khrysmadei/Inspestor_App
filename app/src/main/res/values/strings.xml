@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Inspestor</string>
+    <string name="app_name">Inspestorv2</string>
     <string name="app_motto">Your insect pest detector.</string>
     <string name="gallery">Gallery</string>
     <string name="camera">Capture</string>
@@ -40,4 +40,5 @@
     <string name="two">2. Click on the camera button to capture an insect pest or the gallery to upload an image.</string>
     <string name="three">3. After capturing/uploading, click OK to process the image.</string>
     <string name="four">4. Inspestor will provide results of the kind of insect pest and then recommend generic pesticides for users to eliminate insect pests.</string>
+    <string name="slogan">Your insect pest detector for rice fields.</string>
 </resources>

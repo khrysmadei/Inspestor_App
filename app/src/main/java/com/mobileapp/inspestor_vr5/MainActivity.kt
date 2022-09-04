@@ -16,6 +16,7 @@ import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import com.mobileapp.inspestor_vr5.databinding.ActivityMainBinding
 import com.mobileapp.inspestor_vr5.ml.TestTrainMetadata3
+import com.mobileapp.inspestor_vr5.ml.TestTrainMetadataUpdated2
 import org.tensorflow.lite.support.image.TensorImage
 
 class MainActivity : AppCompatActivity() {
@@ -24,6 +25,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var result_insect: TextView
     private lateinit var prob_score: TextView
     private lateinit var rec_act_ing_list: TextView
+    private lateinit var brand_name: TextView
+
     private val GALLERY_REQUEST_CODE= 123
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,10 +34,14 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+
 //Main app functions and buttons activation
         captured_Image = binding.capturedImage
         result_insect=binding.resultInsect
         rec_act_ing_list=binding.recActIngList
+        brand_name=binding.brandName
+
+
 
         binding.cameraBtn.setOnClickListener{
             takePicturePreview.launch(null)
@@ -81,6 +88,7 @@ class MainActivity : AppCompatActivity() {
                         Log.i("Tag", "onResultReceived: $uri")
                         val bitmap= BitmapFactory.decodeStream(contentResolver.openInputStream(uri))
                         captured_Image.setImageBitmap(bitmap)
+                        outputGenerator(bitmap)
                     }
                 }
                 else{
@@ -91,7 +99,7 @@ class MainActivity : AppCompatActivity() {
     }
     @SuppressLint("SetTextI18n")
     private fun outputGenerator(bitmap: Bitmap){
-        val TestTrainModel = TestTrainMetadata3.newInstance(this)
+        val TestTrainModel = TestTrainMetadataUpdated2.newInstance(this)
 
         //Creates inputs for reference.
         val newBitmap = bitmap.copy(Bitmap.Config.ARGB_8888, true)
@@ -104,38 +112,49 @@ class MainActivity : AppCompatActivity() {
             }
         }
         val detectionResult=outputs[0]
-        if(detectionResult.scoreAsFloat <= .5){
+        if(detectionResult.scoreAsFloat <= .75){
             result_insect.text="No pest detected"
             rec_act_ing_list.text=" "
-            //prob_score.text=" "
+            brand_name.text=" "
+           // prob_score.text=" "
         }else{
             result_insect.text = detectionResult.categoryAsString + " " + detectionResult.scoreAsFloat
-            //prob_score.text="$detectionResult"
+            //prob_score.text= detectionResult.scoreAsFloat + ""
             Log.i("Tag", "outputGenerator: $detectionResult")
+
             if (detectionResult.categoryAsString == "Rice Grain Bug"){
                 rec_act_ing_list.text = "LAMBDA-CYHALOTHRIN 25 g/L" + "\n" + "N CYPERMETHRIN 50g/L" + "\n" + "DIAZINON 600 g/L"
+                brand_name.text = "LAMDAXIN 2.5 EC " + "\n" + "AGRO CYPERMETHRIN 5 EC " + "\n" + "TRUGOLD 60 EC"
             }
             else if (detectionResult.categoryAsString == "Rice Bug"){
                 rec_act_ing_list.text = "LAMBDA-CYHALOTHRIN 25 g/L" + "\n" + "DIAZINON 600 g/L" + "\n" + "N CYPERMETHRIN 50g/L"
+                brand_name.text = "LAMDAXIN 2.5 EC" + "\n" + "SUPERSMAK 50 EC" + "\n" + "TRUGOLD 60 EC"
             }
             else if (detectionResult.categoryAsString == "Brown Planthopper"){
                 rec_act_ing_list.text = "PHENTHOATE 500 g/L" + "\n" + "PHENTHOATE+BPMC 250 g/L" + "\n" + "CYPERMETHRIN 50g/L"
+                brand_name.text = "PHENOM 50 EC " + "\n" + "PHENDEX 350 EC " + "\n" + "DISCOVERY 5 EC"
             }
             else if (detectionResult.categoryAsString == "Leaf Folder"){
                 rec_act_ing_list.text = "ETOFENPROX 25 g/L" + "\n" + "CYPERMETHRIN 55 g/L" + "\n" + "DIAZINON 600g/L"
+                brand_name.text = "TREBON 10 EC " + "\n" + "SUNO CYPERMETHRIN 5 EC" + "\n" + "TRUGOLD 60 EC"
             }
             else if (detectionResult.categoryAsString == "Green Planthopper"){
                 rec_act_ing_list.text = "LAMBDA-CYHALOTHRIN 25 g/L" + "\n" + "CYPERMETHRIN 50 g/L" + "\n" + "PHENTOATE 500g/L"
+                brand_name.text = "LAMDAXIN 2.5 EC " + "\n" + "AGRO CYPERMETHRIN 5 EC " + "\n" + "PHENOM 50 EC"
             }
             else if (detectionResult.categoryAsString == "Rice Black Bug"){
                 rec_act_ing_list.text = "DELTAMETHRIN 25 g/L" + "\n" + "BETA-CYPHERMETRIN 25 g/L" + "\n" + "AZADIRACHTIN 3g/L"
+                brand_name.text = "DECIS 2.5 EC " + "\n" + "CHIX 2.5 EC" + "\n" + "NIMBECIDINE"
             }
             else {
                 rec_act_ing_list.text = " "
+                brand_name.text = " "
             }
         }
 
         TestTrainModel.close()
     }
-
+    override fun onResume() {
+        super.onResume()
+    }
 }
