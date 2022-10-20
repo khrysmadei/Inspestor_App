@@ -5,10 +5,13 @@ import android.app.Activity
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
+import android.graphics.Canvas
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
@@ -17,13 +20,14 @@ import androidx.activity.result.contract.ActivityResultContracts
 import com.mobileapp.inspestor_vr5.databinding.ActivityMainBinding
 import com.mobileapp.inspestor_vr5.ml.TestTrainMetadata3
 import com.mobileapp.inspestor_vr5.ml.TestTrainMetadataUpdated2
+import com.mobileapp.inspestor_vr5.ml.Testtrainmetadata64batchSize
 import org.tensorflow.lite.support.image.TensorImage
+import java.lang.reflect.Modifier
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var captured_Image: ImageView
     private lateinit var result_insect: TextView
-    private lateinit var prob_score: TextView
     private lateinit var rec_act_ing_list: TextView
     private lateinit var brand_name: TextView
 
@@ -58,7 +62,7 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        binding.libNav.setOnClickListener {
+        binding.libBtn.setOnClickListener {
             startActivity(Intent(this, Library::class.java))
 
         }
@@ -66,14 +70,17 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, Instruction::class.java))
 
         }
+
     }
 
     private val takePicturePreview = registerForActivityResult (ActivityResultContracts.TakePicturePreview()) { bitmap ->
+
         if(bitmap != null){
             captured_Image.setImageBitmap(bitmap)
             outputGenerator(bitmap)
         }
     }
+
 
     private val onResult= registerForActivityResult(ActivityResultContracts.StartActivityForResult()){ result->
         Log.i("TAG", "this is the result: ${result.data} ${result.resultCode}")
@@ -99,7 +106,7 @@ class MainActivity : AppCompatActivity() {
     }
     @SuppressLint("SetTextI18n")
     private fun outputGenerator(bitmap: Bitmap){
-        val TestTrainModel = TestTrainMetadataUpdated2.newInstance(this)
+        val TestTrainModel = Testtrainmetadata64batchSize.newInstance(this)
 
         //Creates inputs for reference.
         val newBitmap = bitmap.copy(Bitmap.Config.ARGB_8888, true)
@@ -122,7 +129,68 @@ class MainActivity : AppCompatActivity() {
             //prob_score.text= detectionResult.scoreAsFloat + ""
             Log.i("Tag", "outputGenerator: $detectionResult")
 
-            if (detectionResult.categoryAsString == "Rice Grain Bug"){
+            when (detectionResult.categoryAsString) {
+                "Rice Grain Bug" -> {
+                    binding.recActIngList.text=resources.getString(R.string.rgb_activeI)
+                    binding.brandName.text=resources.getString(R.string.rgb_pesticide)
+
+                    binding.cardResult.setOnClickListener {
+                    startActivity(Intent(this, LibPestInfo::class.java)
+                        .putExtra("card", "rgb_card" ))
+                     }
+                }
+
+                "Rice Bug" -> {
+                    binding.recActIngList.text=resources.getString(R.string.rb_activeI)
+                    binding.brandName.text=resources.getString(R.string.rb_pesticide)
+
+                    binding.cardResult.setOnClickListener {
+                        startActivity(Intent(this, LibPestInfo::class.java)
+                            .putExtra("card", "rb_card" ))
+                    }
+                }
+
+                "Brown Planthopper" -> {
+                    binding.recActIngList.text=resources.getString(R.string.bph_activeI)
+                    binding.brandName.text=resources.getString(R.string.bph_pesticide)
+
+                    binding.cardResult.setOnClickListener {
+                        startActivity(Intent(this, LibPestInfo::class.java)
+                            .putExtra("card", "bph_card" ))
+                    }
+                }
+
+                "Leaf Folder" ->{
+                    binding.recActIngList.text=resources.getString(R.string.lf_activeI)
+                    binding.brandName.text=resources.getString(R.string.lf_pesticide)
+
+                    binding.cardResult.setOnClickListener {
+                        startActivity(Intent(this, LibPestInfo::class.java)
+                            .putExtra("card", "lf_card" ))
+                    }
+                }
+
+                "Green Planthopper" -> {
+                    binding.recActIngList.text=resources.getString(R.string.glf_activeI)
+                    binding.brandName.text=resources.getString(R.string.glf_pesticide)
+
+                    binding.cardResult.setOnClickListener {
+                        startActivity(Intent(this, LibPestInfo::class.java)
+                            .putExtra("card", "glf_card" ))
+                    }
+                }
+
+                "Rice Black Bug" -> {
+                    binding.recActIngList.text=resources.getString(R.string.rbb_activeI)
+                    binding.brandName.text=resources.getString(R.string.rbb_pesticide)
+
+                    binding.cardResult.setOnClickListener {
+                        startActivity(Intent(this, LibPestInfo::class.java)
+                            .putExtra("card", "rbb_card" ))
+                    }
+                }
+
+            /*if (detectionResult.categoryAsString == "Rice Grain Bug"){
                 rec_act_ing_list.text = "LAMBDA-CYHALOTHRIN 25 g/L" + "\n" + "N CYPERMETHRIN 50g/L" + "\n" + "DIAZINON 600 g/L"
                 brand_name.text = "LAMDAXIN 2.5 EC " + "\n" + "AGRO CYPERMETHRIN 5 EC " + "\n" + "TRUGOLD 60 EC"
             }
@@ -149,12 +217,16 @@ class MainActivity : AppCompatActivity() {
             else {
                 rec_act_ing_list.text = " "
                 brand_name.text = " "
-            }
+            }*/
         }
 
         TestTrainModel.close()
+
+      }
     }
     override fun onResume() {
         super.onResume()
     }
+
 }
+

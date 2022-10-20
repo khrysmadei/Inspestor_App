@@ -30,18 +30,23 @@ class LibPestInfo : AppCompatActivity() {
              //   textBar.alpha = alphaFactor
            // }
        // }
-        val card = intent.getStringExtra(" card")
+        val card = intent.getStringExtra("card")
 
-        binding.desTitle.text = "Description"
-        binding.pestTreat.text = " Pest Treatment"
+        binding.lifeCTitle.text = "Life Cycle"
+        binding.pestDamage.text = "Damage Symptoms"
+        binding.pestManage.text = "Management Recommentation"
+        binding.pestTreat.text= "Recommended Pesticide"
+        binding.pestActi.text= "Active Ingredients"
 
         when (card) {
             "bph_card" -> {
                 binding.topBarText.text = "Brown Planthopper"
                 binding.pestLabel.text = binding.topBarText.text
                 binding.sciPest.text = resources.getString(R.string.bph_sci)
-                binding.pestDesc.text = resources.getString(R.string.bph_des)
+                binding.pestLifeC.text = resources.getString(R.string.bph_lifeCycle)
+                binding.pestdamageDesc.text = resources.getString(R.string.bph_dmg)
                 binding.pestreatName.text = resources.getString(R.string.bph_pesticide)
+                binding.pestactiName.text = resources.getString(R.string.bph_activeI)
 
                 val carouselView = binding.carouselView
                 carouselView.registerLifecycle(lifecycle)
@@ -64,12 +69,14 @@ class LibPestInfo : AppCompatActivity() {
                 carouselView.setData(list)
             }
 
-            "gph_card" -> {
-                binding.topBarText.text = "Green Planthopper"
+            "glf_card" -> {
+                binding.topBarText.text = "Green Leaffolder"
                 binding.pestLabel.text = binding.topBarText.text
-                binding.sciPest.text = resources.getString(R.string.gph_sci)
-                binding.pestDesc.text = resources.getString(R.string.gph_des)
-                binding.pestreatName.text = resources.getString(R.string.gph_pesticide)
+                binding.sciPest.text = resources.getString(R.string.glf_sci)
+                binding.pestLifeC.text = resources.getString(R.string.glf_lifeCycle)
+                binding.pestdamageDesc.text = resources.getString(R.string.glf_dmg)
+                binding.pestreatName.text = resources.getString(R.string.glf_pesticide)
+                binding.pestactiName.text = resources.getString(R.string.glf_activeI)
 
                 val carouselView = binding.carouselView
                 carouselView.registerLifecycle(lifecycle)
@@ -101,8 +108,10 @@ class LibPestInfo : AppCompatActivity() {
                 binding.topBarText.text = "Rice Bug"
                 binding.pestLabel.text = binding.topBarText.text
                 binding.sciPest.text = resources.getString(R.string.rb_sci)
-                binding.pestDesc.text = resources.getString(R.string.rb_des)
+                //binding.pestLifeC.text = resources.getString(R.string.rb_lifeCycle)
+                //binding.pestdamageDesc.text = resources.getString(R.string.rb_dmg)
                 binding.pestreatName.text = resources.getString(R.string.rb_pesticide)
+                binding.pestactiName.text = resources.getString(R.string.rb_activeI)
 
                 val carouselView = binding.carouselView
                 carouselView.registerLifecycle(lifecycle)
@@ -129,8 +138,10 @@ class LibPestInfo : AppCompatActivity() {
                 binding.topBarText.text = "Rice Black Bug"
                 binding.pestLabel.text = binding.topBarText.text
                 binding.sciPest.text = resources.getString(R.string.rbb_sci)
-                binding.pestDesc.text = resources.getString(R.string.rbb_des)
+                //binding.pestLifeC.text = resources.getString(R.string.bph_lifeCycle)
+                //binding.pestdamageDesc.text = resources.getString(R.string.bph_dmg)
                 binding.pestreatName.text = resources.getString(R.string.rbb_pesticide)
+                binding.pestactiName.text = resources.getString(R.string.rbb_activeI)
 
                 val carouselView = binding.carouselView
                 carouselView.registerLifecycle(lifecycle)
@@ -157,8 +168,10 @@ class LibPestInfo : AppCompatActivity() {
                 binding.topBarText.text = "Rice Grain Bug"
                 binding.pestLabel.text = binding.topBarText.text
                 binding.sciPest.text = resources.getString(R.string.rgb_sci)
-                binding.pestDesc.text = resources.getString(R.string.rgb_des)
+                //binding.pestLifeC.text = resources.getString(R.string.rgb_lifeCycle)
+                //binding.pestdamageDesc.text = resources.getString(R.string.rgb_dmg)
                 binding.pestreatName.text = resources.getString(R.string.rgb_pesticide)
+                binding.pestactiName.text = resources.getString(R.string.rgb_activeI)
 
                 val carouselView = binding.carouselView
                 carouselView.registerLifecycle(lifecycle)
@@ -185,8 +198,10 @@ class LibPestInfo : AppCompatActivity() {
                 binding.topBarText.text = "Leaf Folder"
                 binding.pestLabel.text = binding.topBarText.text
                 binding.sciPest.text = resources.getString(R.string.lf_sci)
-                binding.pestDesc.text = resources.getString(R.string.lf_des)
+                //binding.pestLifeC.text = resources.getString(R.string.lf_lifeCycle)
+                //binding.pestdamageDesc.text = resources.getString(R.string.lf_dmg)
                 binding.pestreatName.text = resources.getString(R.string.lf_pesticide)
+                binding.pestactiName.text = resources.getString(R.string.lf_activeI)
 
                 val carouselView = binding.carouselView
                 carouselView.registerLifecycle(lifecycle)
@@ -210,7 +225,7 @@ class LibPestInfo : AppCompatActivity() {
             }
         }
 
-        binding.btnBack.setOnClickListener {
+        binding.backBtn.setOnClickListener {
             finish()
         }
     }

@@ -144,7 +144,6 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:scaleType="fitXY"
-                        android:background="@layout/image_border"
                         android:padding="2dp"
                         android:src="@drawable/bph"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -185,7 +184,7 @@
 
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/gph_btn"
+                android:id="@+id/glf_btn"
                 android:layout_width="300dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="10dp"
@@ -206,7 +205,6 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:scaleType="fitXY"
-                        android:background="@layout/image_border"
                         android:padding="2dp"
                         android:src="@drawable/gph"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -222,7 +220,7 @@
                         android:id="@+id/gph_title"
                         android:layout_marginVertical="10dp"
                         android:layout_marginStart="10dp"
-                        android:text="@string/gph_name"
+                        android:text="@string/glf_name"
                         android:textSize="18sp"
                         android:textColor="@color/black"
                         android:fontFamily="@font/be_vietnam"
@@ -234,7 +232,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/gph_subt"
-                        android:text="@string/gph_sci"
+                        android:text="@string/glf_sci"
                         android:textColor="@color/green_dark"
                         android:textStyle="italic"
                         android:textSize="15sp"
@@ -256,7 +254,7 @@
                 app:cardCornerRadius="15dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/gph_btn">
+                app:layout_constraintTop_toBottomOf="@id/glf_btn">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -267,7 +265,6 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:scaleType="fitXY"
-                        android:background="@layout/image_border"
                         android:padding="2dp"
                         android:src="@drawable/rb"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -328,7 +325,6 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:scaleType="fitXY"
-                        android:background="@layout/image_border"
                         android:padding="2dp"
                         android:src="@drawable/rbb"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -390,7 +386,6 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:scaleType="fitXY"
-                        android:background="@layout/image_border"
                         android:padding="2dp"
                         android:src="@drawable/rgb"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -451,7 +446,6 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:scaleType="fitXY"
-                        android:background="@layout/image_border"
                         android:padding="2dp"
                         android:src="@drawable/lf"
                         app:layout_constraintBottom_toBottomOf="parent"

@@ -33,7 +33,7 @@ class Library : AppCompatActivity(), View.OnClickListener {
        // }
 
         binding.bphBtn.setOnClickListener(this)
-        binding.gphBtn.setOnClickListener(this)
+        binding.glfBtn.setOnClickListener(this)
         binding.rbBtn.setOnClickListener(this)
         binding.rbbBtn.setOnClickListener(this)
         binding.rgbBtn.setOnClickListener(this)
@@ -48,27 +48,27 @@ class Library : AppCompatActivity(), View.OnClickListener {
         when (card?.id){
             R.id.bph_btn->
                 startActivity(Intent(this, LibPestInfo::class.java)
-                    .putExtra(" card", "bph_card"))
+                    .putExtra("card", "bph_card"))
 
-            R.id.gph_btn->
+            R.id.glf_btn->
                 startActivity(Intent(this, LibPestInfo::class.java)
-                    .putExtra(" card", "gph_card"))
+                    .putExtra("card", "glf_card"))
 
             R.id.rb_btn->
                 startActivity(Intent(this, LibPestInfo::class.java)
-                    .putExtra(" card", "rb_card"))
+                    .putExtra("card", "rb_card"))
 
             R.id.rbb_btn->
                 startActivity(Intent(this, LibPestInfo::class.java)
-                    .putExtra(" card", "rbb_card"))
+                    .putExtra("card", "rbb_card"))
 
             R.id.rgb_btn->
                 startActivity(Intent(this, LibPestInfo::class.java)
-                    .putExtra(" card", "rgb_card"))
+                    .putExtra("card", "rgb_card"))
 
             R.id.lf_btn->
                 startActivity(Intent(this, LibPestInfo::class.java)
-                    .putExtra(" card", "lf_card"))
+                    .putExtra("card", "lf_card"))
         }
     }
 }

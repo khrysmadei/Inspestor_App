@@ -42,6 +42,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'org.tensorflow:tensorflow-lite-support:0.1.0'
     implementation 'org.tensorflow:tensorflow-lite-metadata:0.1.0'
+    
 
 
     //implementation 'com.github.smarteist:autoimageslider:1.4.0'
