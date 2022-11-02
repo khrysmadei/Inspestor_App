@@ -154,7 +154,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/sci_pest"
                     android:fontFamily="@font/abel"
-                    android:text="ScientificName"
+                    android:text="Scientific Name"
                     android:layout_marginTop="5dp"
                     android:textColor="@color/green_dark"
                     android:textSize="15sp"
@@ -223,7 +223,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
                         android:fontFamily="@font/be_vietnam"
-                        android:text="Management Recommendation"
+                        android:text="@string/mngmnt_t"
                         android:textSize="20sp"
                         android:textColor="@color/black"/>
 

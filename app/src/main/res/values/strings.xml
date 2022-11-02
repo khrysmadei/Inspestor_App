@@ -16,6 +16,8 @@
     <string name="pest_name">Insect Pest Name</string>
     <string name="pest_reco">Pesticide Recommendation</string>
 
+    <!-- overlay-->
+    <string name="overlay_text">Place the insect inside the box</string>
     --------------------------------------------------<!-- instructions-->-----------------------------------------------------------
     <string name="manual">How to identify insect using Inspestor</string>
     <string name="man_sub">Instructions to use our app:</string>

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+     <string name="mngmnt_t">
+        Management Recommendation
+    </string>
     -------------------------------------------------<!--Brown Planthopper-->----------------------------------------------------
     <string name="bph_name">Brown Planthopper</string>
     <string name="bph_sci">Nilaparvata lugens</string>
@@ -53,9 +56,9 @@
         \nMany varieties have been bred for resistance to brown planthoppers; unfortunately, there are many instances where changes occur in the planthoppers allowing them to overcome the resistance. </string>
         <!--https://apps.lucidcentral.org/pppw_v10/text/web_full/entities/rice_brown_planthopper_064.htm-->
 -------------------------------------------------<!--Green Leaf Hopper-->----------------------------------------------------
-    <string name="glf_name">Green Leaffolder</string>
-    <string name="glf_sci">Nephotettix nigropictus</string>
-    <string name="glf_lifeCycle">
+    <string name="glh_name">Green Planthopper</string>
+    <string name="glh_sci">Nephotettix nigropictus</string>
+    <string name="glh_lifeCycle">
         • Eggs are laid in small slits made in the soft parts of the leaf sheaths.
       \n• Newly laid eggs are barely visible and are cylindrical, banana-shaped, and pale yellow.
       \n• Nymphs emerge from eggs in 6-8 days.
@@ -65,20 +68,20 @@
       \n• There are five instars before they become adult.
       \n• The total life cycle from egg to adult is 22-26 days.
     </string>
-    <string name="glf_dmg">
+    <string name="glh_dmg">
         • Adults and nymphs rarely cause serious feeding damage to rice plant, unlike planthoppers.
       \n• GLF transmit viruses (tungro and dwarf) and mycoplasma agents of yellow dwarf and orange leaf diseases.
       \nSource:
     <!--https://www.agriculture.com.ph/2019/12/16/management-of-planthoppers-and-leafhoppers/-->
     </string>
-    <string name="glf_pesticide">
+    <string name="glh_pesticide">
         LAMDAXIN 2.5 EC \nAGRO CYPERMETHRIN 5 EC \nPHENOM 50 EC
     </string>
-    <string name="glf_activeI">
+    <string name="glh_activeI">
        LAMBDA‐CYHALOTHRIN \nCYPERMETHRIN  \nPHENTHOATE
     </string>
 
-    <string name="glf_mngmnt">
+    <string name="glh_mngmnt">
         • Use GLH-resistant and tungro-resistant varieties. Contact your local agriculture office for an up-to-date list of available varieties.
       \n• Reduce the number of rice crops to two per year and synchronized crop establishment across farms reduces leafhoppers and other insect vectors.
       \n• Transplant older seedlings (>3 weeks) to reduce viral disease susceptibility transmitted by leafhoppers.
@@ -216,7 +219,7 @@ damage occurs when the infestation happens from the seed bed, maximum tillering 
     </string>
 
     -------------------------------------------------<!--Leaffolder-->----------------------------------------------------
-    <string name="lf_name">Leaffolder</string>
+    <string name="lf_name">Leaf Folder</string>
     <string name="lf_sci"> Cnaphalocrocis medinalis</string>
     <string name="lf_lifeCycle"> The adult rice leaffolder is a yellow-brown moth. Leaffolder caterpillars fold the rice leaves around
             themselves and attach the leaf margins together with silk strands. Each female lays around 300 eggs at
@@ -231,7 +234,7 @@ damage occurs when the infestation happens from the seed bed, maximum tillering 
     <string name="lf_pesticide">TREBON 10 EC \nSUNO CYPERMETHRIN 5 EC \nTRUGOLD 60 EC</string>
     <string name="lf_activeI">ETOFENPROX 25g/L \nCYPERMETHRIN 55 g/L n\DIAZINON 600g/L</string>
     <string name="lf_mngmnt">
-        To prevent leaffolder outbreaks:
+        To prevent leaf folder outbreaks:
         \n• Use resistant varieties.
         \n• Contact your local agriculture office for an up-to-date list of available varieties.
         \n• Follow rice with a different crop, or fallow period.

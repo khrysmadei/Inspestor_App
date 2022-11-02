@@ -8,10 +8,17 @@
     android:padding="15dp"
     tools:context=".MainActivity">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/spaceBar"
+        android:background="@color/app_bg"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/header"
             android:layout_width="match_parent"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -36,7 +43,7 @@
                     android:textSize="30dp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="paren t" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/app_subtitle"
@@ -169,9 +176,10 @@
         android:id="@+id/scroller"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="72dp"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="71dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -215,6 +223,8 @@
                 android:id="@+id/buttons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 app:layout_constraintBottom_toTopOf="@+id/spacer_three"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -314,7 +324,7 @@
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardResult"
                 android:layout_width="300dp"
-                android:layout_height="200dp"
+                android:layout_height="225dp"
                 android:backgroundTint="@color/clkble_bg"
                 android:clickable="true"
                 app:cardCornerRadius="5dp"

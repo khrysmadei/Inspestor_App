@@ -34,7 +34,7 @@ class LibPestInfo : AppCompatActivity() {
 
         binding.lifeCTitle.text = "Life Cycle"
         binding.pestDamage.text = "Damage Symptoms"
-        binding.pestManage.text = "Management Recommentation"
+        binding.pestManage.text = "Management Recommendation"
         binding.pestTreat.text= "Recommended Pesticide"
         binding.pestActi.text= "Active Ingredients"
 
@@ -45,6 +45,7 @@ class LibPestInfo : AppCompatActivity() {
                 binding.sciPest.text = resources.getString(R.string.bph_sci)
                 binding.pestLifeC.text = resources.getString(R.string.bph_lifeCycle)
                 binding.pestdamageDesc.text = resources.getString(R.string.bph_dmg)
+                binding.pestmanageSteps.text=resources.getString(R.string.bph_mngmnt)
                 binding.pestreatName.text = resources.getString(R.string.bph_pesticide)
                 binding.pestactiName.text = resources.getString(R.string.bph_activeI)
 
@@ -69,14 +70,15 @@ class LibPestInfo : AppCompatActivity() {
                 carouselView.setData(list)
             }
 
-            "glf_card" -> {
-                binding.topBarText.text = "Green Leaffolder"
+            "glh_card" -> {
+                binding.topBarText.text = "Green Planthopper "
                 binding.pestLabel.text = binding.topBarText.text
-                binding.sciPest.text = resources.getString(R.string.glf_sci)
-                binding.pestLifeC.text = resources.getString(R.string.glf_lifeCycle)
-                binding.pestdamageDesc.text = resources.getString(R.string.glf_dmg)
-                binding.pestreatName.text = resources.getString(R.string.glf_pesticide)
-                binding.pestactiName.text = resources.getString(R.string.glf_activeI)
+                binding.sciPest.text = resources.getString(R.string.glh_sci)
+                binding.pestLifeC.text = resources.getString(R.string.glh_lifeCycle)
+                binding.pestdamageDesc.text = resources.getString(R.string.glh_dmg)
+                binding.pestmanageSteps.text=resources.getString(R.string.glh_mngmnt)
+                binding.pestreatName.text = resources.getString(R.string.glh_pesticide)
+                binding.pestactiName.text = resources.getString(R.string.glh_activeI)
 
                 val carouselView = binding.carouselView
                 carouselView.registerLifecycle(lifecycle)
@@ -108,8 +110,9 @@ class LibPestInfo : AppCompatActivity() {
                 binding.topBarText.text = "Rice Bug"
                 binding.pestLabel.text = binding.topBarText.text
                 binding.sciPest.text = resources.getString(R.string.rb_sci)
-                //binding.pestLifeC.text = resources.getString(R.string.rb_lifeCycle)
-                //binding.pestdamageDesc.text = resources.getString(R.string.rb_dmg)
+                binding.pestLifeC.text = resources.getString(R.string.rb_lifeCycle)
+                binding.pestdamageDesc.text = resources.getString(R.string.rb_dmg)
+                binding.pestmanageSteps.text = resources.getString(R.string.rb_mngmnt)
                 binding.pestreatName.text = resources.getString(R.string.rb_pesticide)
                 binding.pestactiName.text = resources.getString(R.string.rb_activeI)
 
@@ -138,8 +141,9 @@ class LibPestInfo : AppCompatActivity() {
                 binding.topBarText.text = "Rice Black Bug"
                 binding.pestLabel.text = binding.topBarText.text
                 binding.sciPest.text = resources.getString(R.string.rbb_sci)
-                //binding.pestLifeC.text = resources.getString(R.string.bph_lifeCycle)
-                //binding.pestdamageDesc.text = resources.getString(R.string.bph_dmg)
+                binding.pestLifeC.text = resources.getString(R.string.rbb_lifeCycle)
+                binding.pestdamageDesc.text = resources.getString(R.string.rbb_dmg)
+                binding.pestmanageSteps.text = resources.getString(R.string.rbb_mngmnt)
                 binding.pestreatName.text = resources.getString(R.string.rbb_pesticide)
                 binding.pestactiName.text = resources.getString(R.string.rbb_activeI)
 
@@ -168,8 +172,9 @@ class LibPestInfo : AppCompatActivity() {
                 binding.topBarText.text = "Rice Grain Bug"
                 binding.pestLabel.text = binding.topBarText.text
                 binding.sciPest.text = resources.getString(R.string.rgb_sci)
-                //binding.pestLifeC.text = resources.getString(R.string.rgb_lifeCycle)
-                //binding.pestdamageDesc.text = resources.getString(R.string.rgb_dmg)
+                binding.pestLifeC.text = resources.getString(R.string.rgb_lifeCycle)
+                binding.pestdamageDesc.text = resources.getString(R.string.rgb_dmg)
+                binding.pestmanageSteps.text = resources.getString(R.string.rgb_mngmnt)
                 binding.pestreatName.text = resources.getString(R.string.rgb_pesticide)
                 binding.pestactiName.text = resources.getString(R.string.rgb_activeI)
 
@@ -198,8 +203,9 @@ class LibPestInfo : AppCompatActivity() {
                 binding.topBarText.text = "Leaf Folder"
                 binding.pestLabel.text = binding.topBarText.text
                 binding.sciPest.text = resources.getString(R.string.lf_sci)
-                //binding.pestLifeC.text = resources.getString(R.string.lf_lifeCycle)
-                //binding.pestdamageDesc.text = resources.getString(R.string.lf_dmg)
+                binding.pestLifeC.text = resources.getString(R.string.lf_lifeCycle)
+                binding.pestdamageDesc.text = resources.getString(R.string.lf_dmg)
+                binding.pestmanageSteps.text = resources.getString(R.string.lf_mngmnt)
                 binding.pestreatName.text = resources.getString(R.string.lf_pesticide)
                 binding.pestactiName.text = resources.getString(R.string.lf_activeI)
 

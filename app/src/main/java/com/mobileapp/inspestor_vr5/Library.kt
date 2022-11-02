@@ -52,7 +52,7 @@ class Library : AppCompatActivity(), View.OnClickListener {
 
             R.id.glf_btn->
                 startActivity(Intent(this, LibPestInfo::class.java)
-                    .putExtra("card", "glf_card"))
+                    .putExtra("card", "glh_card"))
 
             R.id.rb_btn->
                 startActivity(Intent(this, LibPestInfo::class.java)

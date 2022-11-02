@@ -3,14 +3,13 @@ package com.mobileapp.inspestor_vr5
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
-import android.graphics.Bitmap
-import android.graphics.BitmapFactory
-import android.graphics.Canvas
-import android.graphics.Color
+import android.graphics.*
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
+import android.view.SurfaceControlViewHost
+import android.view.SurfaceHolder
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
@@ -18,10 +17,7 @@ import android.widget.TextView
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import com.mobileapp.inspestor_vr5.databinding.ActivityMainBinding
-import com.mobileapp.inspestor_vr5.ml.TestTrainMetadata3
-import com.mobileapp.inspestor_vr5.ml.TestTrainMetadataUpdated2
-import com.mobileapp.inspestor_vr5.ml.Testtrainmetadata640x64016batchsize
-import com.mobileapp.inspestor_vr5.ml.Testtrainmetadata64batchSize
+import com.mobileapp.inspestor_vr5.ml.*
 import org.tensorflow.lite.support.image.TensorImage
 import java.lang.reflect.Modifier
 
@@ -32,7 +28,13 @@ class MainActivity : AppCompatActivity() {
 //
 //        const val DESIRED_WIDTH_CROP_PERCENTAGE = 20
 //        const val DESIRED_HEIGHT_CROP_PERCENTAGE = 20
+//
+//        private const val RATIO_16_9_VALUE = 16.0 / 9.0
+//        private const val RATIO_12_6_VALUE = 12.0 / 6.0
+//        private const val TAG = "MainActivity"
 //    }
+
+
     private lateinit var binding: ActivityMainBinding
     private lateinit var captured_Image: ImageView
     private lateinit var result_insect: TextView
@@ -79,7 +81,58 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+//           overlay.apply{
+//           setZOrderOntTop(true)
+//            holder.setFormat
+//             }
     }
+
+
+//    private fun drawOverlay(
+//        holder: SurfaceHolder,
+//        heightCropPercentage: Int,
+//        widthCropPercentage: Int
+//    ){
+//        val canvas = holder.lockCanvas()
+//        val bgPaint = Paint().apply{
+//            alpha = 140
+//        }
+//        canvas.drawPaint(bgPaint)
+//        val rectPaint = Paint()
+//        rectPaint.xfermode = PorterDuffXfermode(PorterDuff.Mode.CLEAR)
+//        rectPaint.style = Paint.Style.FILL
+//        rectPaint.color = Color.WHITE
+//        val outlinePaint = Paint()
+//        outlinePaint.style= Paint.Style.STROKE
+//        outlinePaint.color = Color.WHITE
+//        outlinePaint.strokeWidth = 4f
+//        val surfaceWidth = holder.surfaceFrame.width()
+//        val surfaceHeight = holder.surfaceFrame.height()
+//
+//        val cornerRadius = 25f
+//    //set rect centered in frame
+//        val rectTop = surfaceHeight * heightCropPercentage / 2 / 100f
+//        val rectLeft = surfaceWidth * widthCropPercentage / 2 / 100f
+//        val rectRight = surfaceWidth * (1 - widthCropPercentage / 2 / 100f)
+//        val rectBottom = surfaceHeight * (1 - heightCropPercentage / 2 / 100f)
+//        val rect = RectF(rectLeft, rectTop, rectRight, rectBottom)
+//        canvas.drawRoundRect(
+//            rect, cornerRadius, cornerRadius, rectPaint )
+//        canvas.drawRoundRect(
+//            rect, cornerRadius, cornerRadius, outlinePaint )
+//
+//        val textPaint = Paint()
+//        textPaint.color = Color.WHITE
+//        textPaint.textSize = 50f
+//
+//        val overlayText = getString(R.string.overlay_text)
+//        val textBounds = Rect()
+//        textPaint.getTextBounds(overlayText, 0, overlayText.length, textBounds)
+//        val textX = (surfaceWidth - textBounds.width()) / 2f
+//        val textY = rectBottom + textBounds.height() + 15f // text overlay below the box
+//        canvas.drawText(getString(R.string.overlay_text), textX, textY, textPaint)
+//        holder.unlockCanvasAndPost(canvas)
+//    }
 
     private val takePicturePreview = registerForActivityResult (ActivityResultContracts.TakePicturePreview()) { bitmap ->
 
@@ -114,7 +167,7 @@ class MainActivity : AppCompatActivity() {
     }
     @SuppressLint("SetTextI18n")
     private fun outputGenerator(bitmap: Bitmap){
-        val TestTrainModel = Testtrainmetadata640x64016batchsize.newInstance(this)
+        val TestTrainModel = Testtrainmetadata640x640WbgPbg.newInstance(this)
 
         //Creates inputs for reference.
         val newBitmap = bitmap.copy(Bitmap.Config.ARGB_8888, true)
@@ -127,7 +180,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         val detectionResult=outputs[0]
-        if(detectionResult.scoreAsFloat <= .75){
+        if(detectionResult.scoreAsFloat <= .25){
             result_insect.text="No pest detected"
             rec_act_ing_list.text=" "
             brand_name.text=" "
@@ -179,12 +232,12 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 "Green Planthopper" -> {
-                    binding.recActIngList.text=resources.getString(R.string.glf_activeI)
-                    binding.brandName.text=resources.getString(R.string.glf_pesticide)
+                    binding.recActIngList.text=resources.getString(R.string.glh_activeI)
+                    binding.brandName.text=resources.getString(R.string.glh_pesticide)
 
                     binding.cardResult.setOnClickListener {
                         startActivity(Intent(this, LibPestInfo::class.java)
-                            .putExtra("card", "glf_card" ))
+                            .putExtra("card", "glh_card" ))
                     }
                 }
 
