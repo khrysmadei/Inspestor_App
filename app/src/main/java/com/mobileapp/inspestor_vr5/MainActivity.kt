@@ -20,11 +20,19 @@ import androidx.activity.result.contract.ActivityResultContracts
 import com.mobileapp.inspestor_vr5.databinding.ActivityMainBinding
 import com.mobileapp.inspestor_vr5.ml.TestTrainMetadata3
 import com.mobileapp.inspestor_vr5.ml.TestTrainMetadataUpdated2
+import com.mobileapp.inspestor_vr5.ml.Testtrainmetadata640x64016batchsize
 import com.mobileapp.inspestor_vr5.ml.Testtrainmetadata64batchSize
 import org.tensorflow.lite.support.image.TensorImage
 import java.lang.reflect.Modifier
 
 class MainActivity : AppCompatActivity() {
+
+//    companion object{
+//        fun newInstance() = MainActivity()
+//
+//        const val DESIRED_WIDTH_CROP_PERCENTAGE = 20
+//        const val DESIRED_HEIGHT_CROP_PERCENTAGE = 20
+//    }
     private lateinit var binding: ActivityMainBinding
     private lateinit var captured_Image: ImageView
     private lateinit var result_insect: TextView
@@ -66,7 +74,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, Library::class.java))
 
         }
-        binding.manNav.setOnClickListener {
+        binding.manBtn.setOnClickListener {
             startActivity(Intent(this, Instruction::class.java))
 
         }
@@ -106,7 +114,7 @@ class MainActivity : AppCompatActivity() {
     }
     @SuppressLint("SetTextI18n")
     private fun outputGenerator(bitmap: Bitmap){
-        val TestTrainModel = Testtrainmetadata64batchSize.newInstance(this)
+        val TestTrainModel = Testtrainmetadata640x64016batchsize.newInstance(this)
 
         //Creates inputs for reference.
         val newBitmap = bitmap.copy(Bitmap.Config.ARGB_8888, true)

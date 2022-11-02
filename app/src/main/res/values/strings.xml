@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Inspestorv2</string>
+    <string name="app_name">Inspestor</string>
     <string name="app_motto">Your insect pest detector.</string>
     <string name="gallery">Gallery</string>
     <string name="camera">Capture</string>
@@ -16,24 +16,7 @@
     <string name="pest_name">Insect Pest Name</string>
     <string name="pest_reco">Pesticide Recommendation</string>
 
-    <!-- library
-    <string name="bph_name">Brown Planthopper</string>
-    <string name="bph_scientific">Nilaparvata lugens</string>
-
-    <string name="gph_name">Green Planthopper</string>
-    <string name="gph_scientific">Cicadella viridis</string>
-
-    <string name="rb_name">Rice Bug</string>
-    <string name="rb_scientific">Leptocorisa oratorius</string>
-
-    <string name="rgb_name">Rice Grain Bug</string>
-    <string name="rgb_scientific">Paraeuscosmetus pallicomis</string>
-
-    <string name="rbb_name">Rice Black Bug</string>
-    <string name="rbb_scientific">Scotinophara coarctata (Fabricius)</string>
-    -->
-
-    <!-- instructions-->
+    --------------------------------------------------<!-- instructions-->-----------------------------------------------------------
     <string name="manual">How to identify insect using Inspestor</string>
     <string name="man_sub">Instructions to use our app:</string>
     <string name="one">1. To accurately detect insect pests, the lighting should not be directed to the insect,and the camera should focus on the insect.</string>

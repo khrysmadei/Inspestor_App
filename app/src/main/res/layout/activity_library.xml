@@ -111,7 +111,7 @@
                 android:layout_marginTop="75dp"
                 android:fontFamily="@font/be_vietnam"
                 android:text="Six Major Insect Pest in Rice Fields"
-                android:textColor="@color/black"
+                android:textColor="@color/green_dark"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@id/bph_btn"

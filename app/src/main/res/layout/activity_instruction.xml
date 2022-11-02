@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/app_bg"
     tools:context=".Instruction">
 
     <View
@@ -126,16 +127,18 @@
                 android:text="@string/man_sub"
                 android:layout_marginTop="10dp"
                 android:textSize="15sp"
-                android:fontFamily="@font/abel"
+                android:textColor="@color/black"
+                android:fontFamily="@font/be_vietnam"
                 app:layout_constraintStart_toStartOf="@id/title"
                 app:layout_constraintTop_toBottomOf="@id/title"/>
             <TextView
                 android:layout_width="300dp"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:text="@string/one"
                 android:textSize="12sp"
+                android:textColor="@color/black"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/abel"
+                android:fontFamily="@font/be_vietnam"
                 android:id="@+id/man_one"
                 app:layout_constraintStart_toStartOf="@id/sub"
                 app:layout_constraintTop_toBottomOf="@id/sub"/>
@@ -162,11 +165,12 @@
 
             <TextView
                 android:layout_width="300dp"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:text="@string/two"
                 android:textSize="12sp"
+                android:textColor="@color/black"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/abel"
+                android:fontFamily="@font/be_vietnam"
                 android:id="@+id/man_two"
                 app:layout_constraintStart_toStartOf="@id/sub"
                 app:layout_constraintTop_toBottomOf="@id/img_one"/>
@@ -184,11 +188,12 @@
 
             <TextView
                 android:layout_width="300dp"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:text="@string/three"
-                android:textSize="12sp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/abel"
+                android:fontFamily="@font/be_vietnam"
                 android:id="@+id/man_three"
                 app:layout_constraintStart_toStartOf="@id/sub"
                 app:layout_constraintTop_toBottomOf="@id/img_three"/>
@@ -206,11 +211,12 @@
 
             <TextView
                 android:layout_width="300dp"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:text="@string/four"
-                android:textSize="12sp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/abel"
+                android:fontFamily="@font/be_vietnam"
                 android:id="@+id/man_four"
                 app:layout_constraintStart_toStartOf="@id/sub"
                 app:layout_constraintTop_toBottomOf="@id/img_four"/>
