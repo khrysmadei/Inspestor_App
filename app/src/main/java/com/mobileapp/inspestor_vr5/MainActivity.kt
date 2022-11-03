@@ -2,23 +2,29 @@ package com.mobileapp.inspestor_vr5
 
 import android.annotation.SuppressLint
 import android.app.Activity
+import android.content.ContentValues.TAG
+import android.content.Context
 import android.content.Intent
 import android.graphics.*
+import android.nfc.Tag
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
 import android.view.SurfaceControlViewHost
 import android.view.SurfaceHolder
+import android.view.SurfaceView
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import com.mobileapp.inspestor_vr5.databinding.ActivityMainBinding
 import com.mobileapp.inspestor_vr5.ml.*
 import org.tensorflow.lite.support.image.TensorImage
+import java.io.IOException
 import java.lang.reflect.Modifier
 
 class MainActivity : AppCompatActivity() {
@@ -41,7 +47,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var rec_act_ing_list: TextView
     private lateinit var brand_name: TextView
 
-    private val GALLERY_REQUEST_CODE= 123
+    private val GALLERY_REQUEST_CODE = 123
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,23 +57,24 @@ class MainActivity : AppCompatActivity() {
 
 //Main app functions and buttons activation
         captured_Image = binding.capturedImage
-        result_insect=binding.resultInsect
-        rec_act_ing_list=binding.recActIngList
-        brand_name=binding.brandName
+        result_insect = binding.resultInsect
+        //rec_act_ing_list = binding.recActIngList
+        brand_name = binding.brandName
 
 
 
-        binding.cameraBtn.setOnClickListener{
+        binding.cameraBtn.setOnClickListener {
             takePicturePreview.launch(null)
+
 
         }
 
-        binding.galleryBtn.setOnClickListener{
+        binding.galleryBtn.setOnClickListener {
             val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
-            intent.type= "image/*"
+            intent.type = "image/*"
             val mimeTypes = arrayOf("image/jpeg", "image/png", "image/jpg")
             intent.putExtra(Intent.EXTRA_MIME_TYPES, mimeTypes)
-            intent.flags= Intent.FLAG_GRANT_READ_URI_PERMISSION
+            intent.flags = Intent.FLAG_GRANT_READ_URI_PERMISSION
             onResult.launch(intent)
 
         }
@@ -81,12 +88,7 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-//           overlay.apply{
-//           setZOrderOntTop(true)
-//            holder.setFormat
-//             }
     }
-
 
 //    private fun drawOverlay(
 //        holder: SurfaceHolder,
@@ -143,6 +145,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+
     private val onResult= registerForActivityResult(ActivityResultContracts.StartActivityForResult()){ result->
         Log.i("TAG", "this is the result: ${result.data} ${result.resultCode}")
         onResultReceived(GALLERY_REQUEST_CODE, result)
@@ -182,9 +185,12 @@ class MainActivity : AppCompatActivity() {
         val detectionResult=outputs[0]
         if(detectionResult.scoreAsFloat <= .25){
             result_insect.text="No pest detected"
-            rec_act_ing_list.text=" "
-            brand_name.text=" "
-           // prob_score.text=" "
+            //rec_act_ing_list.text=" "
+            brand_name.text=""
+            binding.cardResult.setOnClickListener{
+                Toast.makeText(this,"No pest detected, Try again. ", Toast.LENGTH_SHORT).show()
+            }
+
         }else{
             result_insect.text = detectionResult.categoryAsString + " " + detectionResult.scoreAsFloat
             //prob_score.text= detectionResult.scoreAsFloat + ""
@@ -192,66 +198,77 @@ class MainActivity : AppCompatActivity() {
 
             when (detectionResult.categoryAsString) {
                 "Rice Grain Bug" -> {
-                    binding.recActIngList.text=resources.getString(R.string.rgb_activeI)
-                    binding.brandName.text=resources.getString(R.string.rgb_pesticide)
+                    //binding.recActIngList.text=resources.getString(R.string.rgb_activeI)
+                    binding.brandName.text = resources.getString(R.string.rgb_pesticide)
 
                     binding.cardResult.setOnClickListener {
-                    startActivity(Intent(this, LibPestInfo::class.java)
-                        .putExtra("card", "rgb_card" ))
-                     }
+                        startActivity(
+                            Intent(this, LibPestInfo::class.java)
+                                .putExtra("card", "rgb_card")
+                        )
+                    }
                 }
-
                 "Rice Bug" -> {
-                    binding.recActIngList.text=resources.getString(R.string.rb_activeI)
-                    binding.brandName.text=resources.getString(R.string.rb_pesticide)
+                    //binding.recActIngList.text=resources.getString(R.string.rb_activeI)
+                    binding.brandName.text = resources.getString(R.string.rb_pesticide)
 
                     binding.cardResult.setOnClickListener {
-                        startActivity(Intent(this, LibPestInfo::class.java)
-                            .putExtra("card", "rb_card" ))
+                        startActivity(
+                            Intent(this, LibPestInfo::class.java)
+                                .putExtra("card", "rb_card")
+                        )
                     }
                 }
 
                 "Brown Planthopper" -> {
-                    binding.recActIngList.text=resources.getString(R.string.bph_activeI)
-                    binding.brandName.text=resources.getString(R.string.bph_pesticide)
+                    //binding.recActIngList.text=resources.getString(R.string.bph_activeI)
+                    binding.brandName.text = resources.getString(R.string.bph_pesticide)
 
                     binding.cardResult.setOnClickListener {
-                        startActivity(Intent(this, LibPestInfo::class.java)
-                            .putExtra("card", "bph_card" ))
+                        startActivity(
+                            Intent(this, LibPestInfo::class.java)
+                                .putExtra("card", "bph_card")
+                        )
                     }
                 }
 
-                "Leaf Folder" ->{
-                    binding.recActIngList.text=resources.getString(R.string.lf_activeI)
-                    binding.brandName.text=resources.getString(R.string.lf_pesticide)
+                "Leaf Folder" -> {
+                    //binding.recActIngList.text=resources.getString(R.string.lf_activeI)
+                    binding.brandName.text = resources.getString(R.string.lf_pesticide)
 
                     binding.cardResult.setOnClickListener {
-                        startActivity(Intent(this, LibPestInfo::class.java)
-                            .putExtra("card", "lf_card" ))
+                        startActivity(
+                            Intent(this, LibPestInfo::class.java)
+                                .putExtra("card", "lf_card")
+                        )
                     }
                 }
 
                 "Green Planthopper" -> {
-                    binding.recActIngList.text=resources.getString(R.string.glh_activeI)
-                    binding.brandName.text=resources.getString(R.string.glh_pesticide)
+                    //binding.recActIngList.text=resources.getString(R.string.glh_activeI)
+                    binding.brandName.text = resources.getString(R.string.glh_pesticide)
 
                     binding.cardResult.setOnClickListener {
-                        startActivity(Intent(this, LibPestInfo::class.java)
-                            .putExtra("card", "glh_card" ))
+                        startActivity(
+                            Intent(this, LibPestInfo::class.java)
+                                .putExtra("card", "glh_card")
+                        )
                     }
                 }
 
                 "Rice Black Bug" -> {
-                    binding.recActIngList.text=resources.getString(R.string.rbb_activeI)
-                    binding.brandName.text=resources.getString(R.string.rbb_pesticide)
+                    //binding.recActIngList.text=resources.getString(R.string.rbb_activeI)
+                    binding.brandName.text = resources.getString(R.string.rbb_pesticide)
 
                     binding.cardResult.setOnClickListener {
-                        startActivity(Intent(this, LibPestInfo::class.java)
-                            .putExtra("card", "rbb_card" ))
+                        startActivity(
+                            Intent(this, LibPestInfo::class.java)
+                                .putExtra("card", "rbb_card")
+                        )
                     }
                 }
 
-            /*if (detectionResult.categoryAsString == "Rice Grain Bug"){
+                /*if (detectionResult.categoryAsString == "Rice Grain Bug"){
                 rec_act_ing_list.text = "LAMBDA-CYHALOTHRIN 25 g/L" + "\n" + "N CYPERMETHRIN 50g/L" + "\n" + "DIAZINON 600 g/L"
                 brand_name.text = "LAMDAXIN 2.5 EC " + "\n" + "AGRO CYPERMETHRIN 5 EC " + "\n" + "TRUGOLD 60 EC"
             }
@@ -279,8 +296,8 @@ class MainActivity : AppCompatActivity() {
                 rec_act_ing_list.text = " "
                 brand_name.text = " "
             }*/
-        }
 
+        }
         TestTrainModel.close()
 
       }

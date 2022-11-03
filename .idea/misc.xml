@@ -3,11 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/app_launcher_background.xml" value="0.137" />
         <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/activity_instruction.xml" value="0.275" />
         <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/activity_lib_pest_info.xml" value="0.4" />
         <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/activity_library.xml" value="0.2" />
-        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/activity_main.xml" value="0.34517045454545453" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/activity_main.xml" value="0.536" />
         <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/camera_layout.xml" value="0.19074074074074074" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/camera_preview.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/khrysma/AndroidStudioProjects/Inspestor_vr5 _2/app/src/main/res/drawable/appLauncher_background.xml" value="0.1675" />
         <entry key="..\:/Users/khrysma/AndroidStudioProjects/Inspestor_vr5 _2/app/src/main/res/mipmap-anydpi-v26/appLauncher.xml" value="0.1675" />
         <entry key="..\:/Users/khrysma/AndroidStudioProjects/Inspestor_vr5 _2/app/src/main/res/mipmap-anydpi-v26/appLauncher_round.xml" value="0.1675" />

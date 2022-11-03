@@ -18,12 +18,14 @@
 
     <!-- overlay-->
     <string name="overlay_text">Place the insect inside the box</string>
-    --------------------------------------------------<!-- instructions-->-----------------------------------------------------------
+    --------------------------------------------------<!-- instructions-->
+    -----------------------------------------------------------
     <string name="manual">How to identify insect using Inspestor</string>
     <string name="man_sub">Instructions to use our app:</string>
-    <string name="one">1. To accurately detect insect pests, the lighting should not be directed to the insect,and the camera should focus on the insect.</string>
-    <string name="two">2. Click on the camera button to capture an insect pest or the gallery to upload an image.</string>
+    <string name="one">1. To accurately detect insect pests,place the insect at the center of the camera preview and zoom in if possible. The lighting should not be directed to the insect,and the camera should focus on the insect.</string>
+    <string name="two">2. Click on the camera button to capture the insect pest or the gallery to upload an image.</string>
     <string name="three">3. After capturing/uploading, click OK to process the image.</string>
-    <string name="four">4. Inspestor will provide results of the kind of insect pest and then recommend generic pesticides for users to eliminate insect pests.</string>
+    <string name="four">4. Inspestor will provide results of the kind of insect pest and then recommend generic pesticides for users to eliminate insect pests.
+                        \nFor further information about the insect pest you can click the result box.</string>
     <string name="slogan">Your insect pest detector for rice fields.</string>
 </resources>

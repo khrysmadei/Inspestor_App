@@ -176,7 +176,8 @@
         android:id="@+id/scroller"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="16dp">
@@ -205,7 +206,7 @@
                     android:id="@+id/captured_Image"
                     android:layout_width="250dp"
                     android:layout_height="225dp"
-                    android:layout_marginTop="60dp"
+                    android:layout_marginTop="10dp"
                     android:src="@drawable/picture"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.487"
@@ -318,22 +319,22 @@
             <View
                 android:id="@+id/spacer_three"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="25dp"
                 app:layout_constraintTop_toBottomOf="@id/buttons" />
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardResult"
                 android:layout_width="300dp"
-                android:layout_height="225dp"
+                android:layout_height="wrap_content"
                 android:backgroundTint="@color/clkble_bg"
                 android:clickable="true"
-                app:cardCornerRadius="5dp"
+                app:cardCornerRadius="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/spacer_three"
                 app:strokeColor="@color/white"
-                app:strokeWidth="1dp">
+                app:cardElevation="2dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="wrap_content"
@@ -347,7 +348,7 @@
                         android:layout_marginTop="10dp"
                         android:text="RESULT"
                         android:textColor="@color/black"
-                        android:textSize="15sp"
+                        android:textSize="20sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
@@ -380,14 +381,14 @@
                     app:layout_constraintStart_toStartOf="@id/result_name"
                     app:layout_constraintTop_toBottomOf="@id/result_insect" />
                 -->
-                    <TextView
-                        android:id="@+id/rec_act_ing_list"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=" "
-                        android:textColor="@color/black"
-                        app:layout_constraintStart_toStartOf="@id/result_insect"
-                        app:layout_constraintTop_toBottomOf="@id/result_insect" />
+<!--                    <TextView-->
+<!--                        android:id="@+id/rec_act_ing_list"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text=" "-->
+<!--                        android:textColor="@color/black"-->
+<!--                        app:layout_constraintStart_toStartOf="@id/result_insect"-->
+<!--                        app:layout_constraintTop_toBottomOf="@id/result_insect" />-->
 
                     <TextView
                         android:id="@+id/brand_title"
@@ -396,7 +397,7 @@
                         android:text="Recommended Pesticides:"
                         android:textColor="@color/black"
                         app:layout_constraintStart_toStartOf="@id/result_insect"
-                        app:layout_constraintTop_toBottomOf="@id/rec_act_ing_list" />
+                        app:layout_constraintTop_toBottomOf="@id/result_insect" />
 
                     <TextView
                         android:id="@+id/brand_name"
@@ -406,6 +407,11 @@
                         android:textColor="@color/black"
                         app:layout_constraintStart_toStartOf="@id/brand_title"
                         app:layout_constraintTop_toBottomOf="@id/brand_title" />
+                    <View
+                        android:id="@+id/result_end"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/brand_name" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 

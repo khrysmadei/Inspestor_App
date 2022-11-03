@@ -54,7 +54,7 @@ class LibPestInfo : AppCompatActivity() {
                 val list = mutableListOf<CarouselItem>()
                 list.add(
                     CarouselItem(
-                        imageDrawable = R.drawable.bph
+                        imageDrawable = R.drawable.b_ph
                     )
                 )
                 list.add(
@@ -85,7 +85,7 @@ class LibPestInfo : AppCompatActivity() {
                 val list = mutableListOf<CarouselItem>()
                 list.add(
                     CarouselItem(
-                        imageDrawable = R.drawable.gph
+                        imageDrawable = R.drawable.g_lh
                     )
                 )
                 list.add(
@@ -121,7 +121,7 @@ class LibPestInfo : AppCompatActivity() {
                 val list = mutableListOf<CarouselItem>()
                 list.add(
                     CarouselItem(
-                        imageDrawable = R.drawable.rb
+                        imageDrawable = R.drawable.r_b
                     )
                 )
                 list.add(
@@ -152,7 +152,7 @@ class LibPestInfo : AppCompatActivity() {
                 val list = mutableListOf<CarouselItem>()
                 list.add(
                     CarouselItem(
-                        imageDrawable = R.drawable.rbb
+                        imageDrawable = R.drawable.r_bb
                     )
                 )
                 list.add(
@@ -183,7 +183,7 @@ class LibPestInfo : AppCompatActivity() {
                 val list = mutableListOf<CarouselItem>()
                 list.add(
                     CarouselItem(
-                        imageDrawable = R.drawable.rgb
+                        imageDrawable = R.drawable.r_gb
                     )
                 )
                 list.add(
@@ -214,7 +214,7 @@ class LibPestInfo : AppCompatActivity() {
                 val list = mutableListOf<CarouselItem>()
                 list.add(
                     CarouselItem(
-                        imageDrawable = R.drawable.lf
+                        imageDrawable = R.drawable.l_f
                     )
                 )
                 list.add(
