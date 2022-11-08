@@ -16,7 +16,6 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-
         android:id="@+id/nav_bar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
@@ -64,8 +63,8 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
                         android:layout_margin="5dp"
                         android:src="@drawable/bck_fin"
                         app:layout_constraintBottom_toTopOf="@+id/textView2"
@@ -116,7 +115,7 @@
                     android:id="@+id/carouselView"
                     android:layout_width="match_parent"
                     android:layout_height="400dp"
-                    app:imageScaleType="fitCenter"
+                    app:imageScaleType="centerCrop"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -143,39 +142,25 @@
                     android:layout_marginStart="20dp"
                     android:fontFamily="@font/be_vietnam"
                     android:text="pestname"
-
                     android:textColor="@color/black"
                     android:textSize="30sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/sci_pest"
-                    android:fontFamily="@font/abel"
-                    android:text="Scientific Name"
-                    android:layout_marginTop="5dp"
-                    android:textColor="@color/green_dark"
-                    android:textSize="15sp"
-                    android:textStyle="italic"
-                    app:layout_constraintStart_toStartOf="@id/pest_label"
-                    app:layout_constraintTop_toBottomOf="@id/pest_label"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:orientation="vertical"
-                    app:layout_constraintTop_toBottomOf="@id/sci_pest">
+                    app:layout_constraintTop_toBottomOf="@id/pest_label">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/lifeC_title"
+                        android:id="@+id/pest_sci_title"
                         android:layout_marginTop="10dp"
                         android:layout_marginStart="20dp"
-                        android:text="Life Cycle"
+                        android:text="Scientific Name"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:fontFamily="@font/be_vietnam"/>
@@ -183,22 +168,23 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/pest_lifeC"
-                        android:fontFamily="@font/abel"
+                        android:id="@+id/pest_sci_desc"
+                        android:fontFamily="@font/be_vietnam"
                         android:justificationMode="inter_word"
                         android:paddingHorizontal="20dp"
                         android:paddingTop="10dp"
-                        android:paddingBottom="20dp"
-                        android:text="description"
-                        android:textSize="15sp"
-                        android:textColor="@color/green_dark"/>
+                        android:paddingBottom="10dp"
+                        android:text="scientific"
+                        android:textStyle="italic"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/pest_damage"
+                        android:id="@+id/pest_identify_title"
                         android:layout_marginTop="10dp"
                         android:layout_marginStart="20dp"
-                        android:text="Damage Symptoms"
+                        android:text="What it does"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:fontFamily="@font/be_vietnam"/>
@@ -206,66 +192,135 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/pestdamage_desc"
-                        android:fontFamily="@font/abel"
+                        android:id="@+id/pest_identify_desc"
+                        android:fontFamily="@font/be_vietnam"
                         android:justificationMode="inter_word"
                         android:paddingHorizontal="20dp"
                         android:paddingTop="10dp"
-                        android:paddingBottom="20dp"
+                        android:paddingBottom="10dp"
                         android:text="description"
+                        android:textColor="@color/black"
                         android:textSize="15sp"
-                        android:textColor="@color/green_dark"/>
-
+                        />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/pest_manage"
+                        android:id="@+id/pest_imp_title"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="20dp"
+                        android:text="Pest Importance"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/be_vietnam"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pest_imp_desc"
+                        android:fontFamily="@font/be_vietnam"
+                        android:justificationMode="inter_word"
+                        android:paddingHorizontal="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="description"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pest_why_where"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="20dp"
+                        android:text="Why and where it occurs"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/be_vietnam"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pest_ww_desc"
+                        android:fontFamily="@font/be_vietnam"
+                        android:justificationMode="inter_word"
+                        android:paddingHorizontal="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="description"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pest_does_title"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="20dp"
+                        android:text="How to Identify Pest"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/be_vietnam"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pest_does_desc"
+                        android:fontFamily="@font/be_vietnam"
+                        android:justificationMode="inter_word"
+                        android:paddingHorizontal="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="description"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pest_mngmnt_title"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
                         android:fontFamily="@font/be_vietnam"
-                        android:text="@string/mngmnt_t"
+                        android:text="Management Recommendation"
                         android:textSize="20sp"
                         android:textColor="@color/black"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/pestmanage_steps"
-                        android:fontFamily="@font/abel"
+                        android:id="@+id/pest_mngmnt_desc"
+                        android:fontFamily="@font/be_vietnam"
                         android:textSize="15sp"
                         android:text="steps"
                         android:justificationMode="inter_word"
                         android:paddingHorizontal="20dp"
                         android:paddingBottom="20dp"
-                        android:textColor="@color/green_dark"/>
+                        android:textColor="@color/black"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/pest_treat"
+                        android:id="@+id/pest_rec_title"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
                         android:fontFamily="@font/be_vietnam"
-                        android:text="Recommended Pesticide"
+                        android:text="Recommended Pesticide List"
                         android:textSize="20sp"
                         android:textColor="@color/black"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/pestreat_name"
-                        android:fontFamily="@font/abel"
+                        android:id="@+id/pest_rec_list"
+                        android:fontFamily="@font/be_vietnam"
                         android:textSize="15sp"
                         android:text="pesticide"
                         android:justificationMode="inter_word"
                         android:paddingHorizontal="20dp"
                         android:paddingBottom="20dp"
-                        android:textColor="@color/green_dark"/>
+                        android:textColor="@color/black"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/pest_acti"
+                        android:id="@+id/pest_acti_title"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
                         android:fontFamily="@font/be_vietnam"
@@ -276,14 +331,23 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/pestacti_name"
-                        android:fontFamily="@font/abel"
+                        android:id="@+id/pest_acti_list"
+                        android:fontFamily="@font/be_vietnam"
                         android:textSize="15sp"
                         android:text="pesticide"
                         android:justificationMode="inter_word"
                         android:paddingHorizontal="20dp"
                         android:paddingBottom="20dp"
-                        android:textColor="@color/green_dark"/>
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/link"
+                        android:text="@string/source_link"
+                        android:justificationMode="inter_word"
+                        android:textSize="12sp"
+                        android:clickable="true"/>
+
                 </LinearLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
 

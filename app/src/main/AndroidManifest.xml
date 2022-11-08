@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Inspestor_vr5" >
         <activity
+            android:name=".onboarding.MainOnBoardingActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main_on_boarding"
+            android:theme="@style/Theme.Inspestor_vr5.NoActionBar" />
+        <activity
             android:name=".LibPestInfo"
             android:exported="false" />
         <activity

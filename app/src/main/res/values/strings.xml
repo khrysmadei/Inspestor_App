@@ -16,10 +16,42 @@
     <string name="pest_name">Insect Pest Name</string>
     <string name="pest_reco">Pesticide Recommendation</string>
 
+    <!-- fragment strings -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main_on_boarding">MainOnBoardingActivity</string>
+
     <!-- overlay-->
     <string name="overlay_text">Place the insect inside the box</string>
-    --------------------------------------------------<!-- instructions-->
-    -----------------------------------------------------------
+
+    <!-- Text Onboarding-->
+    <string name="skip_text"> skip </string>
+    <string name="start_text">start</string>
+    <string name="finish_text"> finish </string>
+    <string name="next_text"> next </string>
+    <string name="previous_text">back</string>
+
+
+    <string name="onboard_title1"> Welcome to Inspestor!</string>
+
+    <string name="onboard_desc1"> Here are some instructions when using Inspestor.  </string>
+
+    <string name="onboard_title2"> ZOOM </string>
+
+    <string name="onboard_desc2"> When capturing tiny insect pest, it is advised to zoom in.  </string>
+
+    <string name="onboard_title3"> FOCUS </string>
+
+    <string name="onboard_desc3"> Make sure that the camera is focused to the insect pest and have a proper lighting. </string>
+
+    <string name="onboard_title4"> light </string>
+
+    <string name="onboard_desc4"> proper lighting </string>
+
+    <string name="onboard_title5"> thank you </string>
+
+    <string name="onboard_desc5"> liat </string>
+    ------------
+    --------------------------------------------------<!-- instructions-->-----------------------------------------------------------
     <string name="manual">How to identify insect using Inspestor</string>
     <string name="man_sub">Instructions to use our app:</string>
     <string name="one">1. To accurately detect insect pests,place the insect at the center of the camera preview and zoom in if possible. The lighting should not be directed to the insect,and the camera should focus on the insect.</string>
@@ -28,4 +60,5 @@
     <string name="four">4. Inspestor will provide results of the kind of insect pest and then recommend generic pesticides for users to eliminate insect pests.
                         \nFor further information about the insect pest you can click the result box.</string>
     <string name="slogan">Your insect pest detector for rice fields.</string>
+
 </resources>

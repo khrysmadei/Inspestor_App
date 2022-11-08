@@ -1,212 +1,336 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-     <string name="mngmnt_t">
-        Management Recommendation
+     <string name="source_link">
+        Source:
+         <a href="http://www.knowledgebank.irri.org/step-by-step-production/growth/pests-and-diseases/insects">
+            www.knowledgebank.irri.org.
+         </a>
     </string>
     -------------------------------------------------<!--Brown Planthopper-->----------------------------------------------------
     <string name="bph_name">Brown Planthopper</string>
-    <string name="bph_sci">Nilaparvata lugens</string>
-    <string name="bph_lifeCycle">
-        • Eggs are laid in batches inside the leaf sheaths and on the leaf midribs.
-      \n• Nymphs are brown.
-      \n• Nymphs molt 5 times within 13-15 days before becoming adults.
-      \n• It takes 7-9 days for the eggs to hatch into nymphs.
+    <string name="bph_sci_name">Nilaparvata lugens</string>
+    <string name="bph_does">
+        High population of planthoppers cause leaves to initially turn orange-yellow before becoming brown and dry and this is a
+        condition called hopperburn that kills the plant.
+        \n
+        \nBPH can also transmit Rice Ragged Stunt and Rice Grassy Stunt diseases. Neither disease can be cured.
     </string>
-    <string name="bph_dmg">
-        • Adults and nymphs feed at the base of the tillers and remove the plant sap.
-      \n• Plants turn yellow and dry rapidly.
-      \n• Heavy infestations are characterized by patches of dried plants in circular manner. This condition is referred to as hopper burn.
-      \n• Honeydew excreted on infested plants becomes a medium for growth of sooty mold fungus, which interferes with normal plant functions BPH transmit
-      \nSource:
-        <!--https://www.agriculture.com.ph/2019/12/16/management-of-planthoppers-and-leafhoppers/-->
+    <string name="bph_why_where">
+       Planthoppers can be a problem in rainfed and in irrigated wetland environments. It also occurs in areas with continuous submerged
+        conditions in the field, high shade, and humidity.
+        \n
+        \nClosed canopy of the rice plants, densely seeded crops, excessive use of nitrogen, and early season insecticide spraying also favors insect development.
+    </string>
+    <string name="bph_identify">
+        Check for the presence of insect:
+        \n
+        \n-crescent-shaped white eggs inserted into the midrib or leaf sheath
+        \n-white to brown nymphs
+        \n-brown or white adults feeding near the base of tillers
+        \n
+        \nCheck the field for:
+        \n
+        \n-hopperburn or yellowing, browning and drying of plant
+        \n-ovipositional marks exposing the plant to fungal and bacterial infections
+        \n-presence of honeydew and sooty molds in the bases of areas infected
+        \n-plants with ragged stunt or grassy stunt virus disease
+        \n
+        \nHopperburn is similar to the feeding damage or "bugburn" caused by the rice black bug. To confirm hopperburn caused by planthoppers,
+        check for the presence of sooty molds at the base of the plant.
     </string>
     <string name="bph_pesticide">
-        PHENOM 50 EC \nPHENDEX 350 EC \nDISCOVERY 5 EC
+        PHENOM 50 EC
+        \nPHENDEX 350 EC
+        \nDISCOVERY 5 EC
     </string>
-    <string name="bph_activeI">
+    <string name="bph_active_ing">
         PHENTHOATE
       \nPHENTHOATE+BPMC
        \nCYPERMETHRIN
     </string>
 
+    <string name="bph_important">
+        The feeding damage caused by planthoppers results in the yellowing of the plants. At high population density, hopperburn or complete
+        drying of the plants is observed. At this level, crop loss may be 100%.
+        \n
+        \nIn field conditions, plants nearing maturity can have hopperburns if infested with about 400−500 BPH nymphs. In the 1970s and 1980s,
+        BPH was considered a threat to rice production in Asia. BPH also transmit Rice Ragged Stunt and Rice Grassy Stunt viruses..
+        \n
+        \nAt a population density of 400−500 nymphs or 200 adults per plant, WBPH can cause complete loss of rice plants. Outbreaks of WBPH were
+        reported in Pakistan in 1978, Malaysia in 1979, and India in 1982, 1984, and 1985.
+    </string>
     <string name="bph_mngmnt">
-        \nOveruse of insecticides is the main cause of outbreaks of brown planthopper.
-        When insecticides are used, predators and parasites are killed, and brown planthopper populations
-        \'resurge\', i.e., the numbers after spraying are higher than before; this is because there are no natural enemies.
-        Integrated Pest Management - IPM - programs stress the need to maintain biological control of natural enemies, and also include tolerant varieties.
-        The routine use of broad-spectrum insecticides should always be avoided.
-        \nNATURAL ENEMIES
-        \nThere are a number of natural predators of the brown planthopper: spiders eat the nymphs and adults, as do coccinellid beetles (ladybird beetles),
-        dragonflies, damselflies, and mirid egg-sucking bugs. There are two species of egg-sucking bugs in the Pacific islands - Cyrtorhinus chinensis and
-        Cyrtorhinus lividipennis - and there are likely to be wasp parasitoids that attack eggs, as well as fungal pathogens and mites.
-        \nCULTURAL CONTROL
-        \nBefore planting:
-        \n•Choose varieties that have tolerance to the brown plant hopper.
-        \n•Avoid staggered planting, preventing planthoppers moving from older to younger crops in ever greater numbers. Plant at the same time as neighbours, within a period of 2-3 weeks.
-        \n•Remove volunteer plants.
-        \n•Rotate rice with other crops. Do not plant rice crops one after another so that large populations of the brown planthopper can migrate easily between them.
-        \nDuring growth:
-        \n•Drain the paddies for 3-4 days during the early stage of infestation.
-        \n•Apply split applications (three times) of nitrogen fertilizer, not all at one time.
-        \n•Allow plants (weeds) on the bunds (and at the borders of dryland crops), and between fields, to flower in order to attract natural enemies.
-        \n•After harvest:
-        \n•Do not ratoon the crop, i.e., do not allow it to resprout and continue growing after harvest.
-        \n•Plough the field after harvest, removing the stubble that would otherwise allow the brown planthoppers to continue to breed.
-        \nRESISTANT VARIETIES
-        \nMany varieties have been bred for resistance to brown planthoppers; unfortunately, there are many instances where changes occur in the planthoppers allowing them to overcome the resistance. </string>
-        <!--https://apps.lucidcentral.org/pppw_v10/text/web_full/entities/rice_brown_planthopper_064.htm-->
+        Outbreaks result from pesticides destroying natural enemies (BPH eggs hatch unchecked, and surviving BPH quickly build-up populations to
+            damaging levels), or when longwinged planthoppers are being carried in by the wind.
+        \n
+        \nTo prevent outbreaks of planthopper:
+        \n
+        \n1. Remove weeds from the field and surrounding areas.
+        \n2. Avoid indiscriminate use of insecticide, which destroys natural enemies.
+        \n3. Use a resistant variety. Contact your local agriculture office for an up-to-date list of available varieties.
+        \n4. Critical numbers: At a density of 1 BPH/stem or less there is still time to act in case the numbers increase.
+        \n5. Look for BPH daily in the seedbed, or weekly in the field, on stems and the water surface. Check each side of
+            the seed bed (or direct-seeded fields). For older rice plants, grasp the plant, bend it over slightly, and gently
+            tap it near the base to see if planthoppers fall onto the water surface. For transplanted rice look at bases of 10
+            to 20 hills as you cross the field diagonally. There is no need to scout for BPH or WBPH beyond the milk stage.
+        \n6. Use light traps (e.g., an electric bulb or kerosene lamp near a light colored wall or over a pan of water) at night
+            when rice is prone to planthopper attack. Do not place lights near seedbeds or fields. If the light trap is inundated
+            with hundreds of BPH, it\'s a signal to check your seedbed or field immediately; then scout every day for the next few weeks.
+            If farmers monitor on a daily basis anyway, then a light trap is unnecessary.
+        \n
+        \nTo control planthoppers:
+        \n
+        \nMechanical &amp; physical measures
+        \n
+        \n-Flood the seedbed, for a day, so that only the tips of seedlings are exposed will control BPH.
+        \n-Sweep small seedbeds with a net to remove some BPH (but not eggs), particularly from dry seed beds. At high BPH densities,
+            sweeping will not remove sufficient numbers of BPH from the base of the plant.
+        \n
+        \nBiological control
+        \n
+        \n-If natural enemies out-number BPH the risk of hopperburn is low. Even rice already damaged by hopperburn should
+            not be treated with insecticides if natural enemies out-number BPH. Natural enemies of BPH include water striders,
+            mirid bugs, spiders, and various egg parasitoids.
+        \n
+        \nChemical control
+        \n
+        \nOnly apply insecticides to the seedbed, for BPH or WBPH, if all of these conditions are met:
+        \n
+        \n-an average of more than one planthopper per stem,
+        \n-on average, more planthoppers than natural enemies,
+        \n-flooding the seedbed is not an option.
+        \n
+    </string>
+    <string name="bph_hyperlink">
+        Source:
+        <a href="http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/insects/item/planthopper">
+            knowledgebank.irri.org
+        </a>
+    </string>
 -------------------------------------------------<!--Green Leaf Hopper-->----------------------------------------------------
     <string name="glh_name">Green Planthopper</string>
-    <string name="glh_sci">Nephotettix nigropictus</string>
-    <string name="glh_lifeCycle">
-        • Eggs are laid in small slits made in the soft parts of the leaf sheaths.
-      \n• Newly laid eggs are barely visible and are cylindrical, banana-shaped, and pale yellow.
-      \n• Nymphs emerge from eggs in 6-8 days.
-      \n• Nymphs have varied color pattern on the noctum (neck).
-      \n• The first instar nymphs are numerous on the lower surface of older leaf blades, but from second instar onwards,
-            they distribute themselves evenly on the leaves.
-      \n• There are five instars before they become adult.
-      \n• The total life cycle from egg to adult is 22-26 days.
+    <string name="glh_sci_name">Nephotettix virescens</string>
+    <string name="glh_does">
+       Green leafhoppers are the most common leafhoppers in rice fields and are primarily critical because they spread the viral disease tungro.
+        Both nymphs and adults feed by extracting plant sap with their needle-shaped mouthparts.
     </string>
-    <string name="glh_dmg">
-        • Adults and nymphs rarely cause serious feeding damage to rice plant, unlike planthoppers.
-      \n• GLF transmit viruses (tungro and dwarf) and mycoplasma agents of yellow dwarf and orange leaf diseases.
-      \nSource:
-    <!--https://www.agriculture.com.ph/2019/12/16/management-of-planthoppers-and-leafhoppers/-->
+    <string name="glh_why_where">
+        Staggered planting encourages population growth of GLH.
+        \n
+        \nGreen leafhoppers are common in rainfed and irrigated wetland environments. They are not prevalent in upland rice.
+            Both the nymphs and adults feed on the dorsal surface of the leaf blades rather than the ventral surface. They prefer to feed on
+            the lateral leaves rather than the leaf sheaths and the middle leaves. They also prefer rice plants that have been fertilized with large amount of nitrogen.
+    </string>
+    <string name="glh_important">
+        Green leafhoppers are important pests. They are vectors of viral diseases such as tungro, yellow dwarf, yellow-orange leaf, transitory yellowing, and dwarf.
+    </string>
+    <string name="glh_identify">
+        Rice fields infested by GLH can have tungro, yellow dwarf, yellow-orange leaf, and transitory yellowing diseases.
+        \n
+        \nSymptoms include:
+        \n
+        \n-stunted plants and reduced vigor
+        \nreduced number of productive tillers
+        \n-withering or complete plant drying
+        \n
+        \nTungro infected crops may sometimes be confused with nitrogen deficiency or iron toxicity or acid soils.
+        To confirm the cause of the problem, check for virus infected plants in the fields, and the presence of the insect:
+        \n
+        \n-white or pale yellow eggs inside leaf sheaths or midribs
+        \nyellow or pale green nymphs with or without black markings
+        \npale green adults with or without black markings feeding on upper parts of the crop
     </string>
     <string name="glh_pesticide">
         LAMDAXIN 2.5 EC \nAGRO CYPERMETHRIN 5 EC \nPHENOM 50 EC
     </string>
-    <string name="glh_activeI">
+    <string name="glh_active_ing">
        LAMBDA‐CYHALOTHRIN \nCYPERMETHRIN  \nPHENTHOATE
     </string>
 
     <string name="glh_mngmnt">
-        • Use GLH-resistant and tungro-resistant varieties. Contact your local agriculture office for an up-to-date list of available varieties.
-      \n• Reduce the number of rice crops to two per year and synchronized crop establishment across farms reduces leafhoppers and other insect vectors.
-      \n• Transplant older seedlings (>3 weeks) to reduce viral disease susceptibility transmitted by leafhoppers.
-      \n• Plant early within a given planting period, particularly in the dry season to reduce the risk of insect-vector disease.
-      \n• Avoid planting during the peak of GLH activity (shown by historical records) to avoid infestation. Light traps can be used to show GLH numbers.
-      \n• Apply nitrogen as needed (e.g., using the Leaf Color Chart) to avoid contributing to population outbreaks by applying too much nitrogen, or hindering plant recovery from planthopper damage by applying insufficient nitrogen.
-      \n• Control weeds in the field and on the bunds to remove the preferred grassy hosts of GLH and promotes crop vigor.
-      \n• Perform crop rotation with a non-rice crop during the dry season to decrease alternate hosts for diseases.
-      \n• Intercrop upland rice with soybean to reduce the incidence of leafhoppers on rice.
-      \nIn areas without tungro source, insecticides are not needed, avoid spraying of insecticide (it is often unable to prevent or reduce tungro infections).
-      \nEncourage biological control agents: small wasps (parasitize the eggs), mirid bug; strepsipterans, small wasps, pipunculid flies, and nematodes (parasitize both the nymphs and adults), aquatic veliid bugs, nabid bugs, empid flies, damselflies, dragonflies, and spiders, fungal pathogen (attacks both nymph and adult).
-        <!--http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/insects/item/green-leafhopper-->
+        1. Use GLH-resistant and tungro-resistant varieties. Contact your local agriculture office for an up-to-date list of available varieties.
+        \n2. Reduce the number of rice crops to two per year and synchronized crop establishment across farms reduces leafhoppers and other insect vectors.
+        \n3. Transplant older seedlings (>3 weeks) to reduce viral disease susceptibility transmitted by leafhoppers.
+        \n4. Plant early within a given planting period, particularly in the dry season to reduce the risk of insect-vector disease.
+        \n5. Avoid planting during the peak of GLH activity (shown by historical records) to avoid infestation. Light traps can be used to show GLH numbers.
+        \n6. Apply nitrogen as needed (e.g., using the Leaf Color Chart) to avoid contributing to population outbreaks by applying too much nitrogen, or hindering
+            plant recovery from planthopper damage by applying insufficient nitrogen.
+        \n7. Control weeds in the field and on the bunds to remove the preferred grassy hosts of GLH and promotes crop vigor.
+        \n8. Perform crop rotation with a non-rice crop during the dry season to decrease alternate hosts for diseases.
+        \n9. Intercrop upland rice with soybean to reduce the incidence of leafhoppers on rice.
+        \n
+        \nIn areas without tungro source, insecticides are not needed, avoid spraying of insecticide (it is often unable to prevent or reduce tungro infections).
+        \n
+        \nEncourage biological control agents: small wasps (parasitize the eggs), mirid bug; strepsipterans, small wasps, pipunculid flies, and nematodes (parasitize
+            both the nymphs and adults), aquatic veliid bugs, nabid bugs, empid flies, damselflies, dragonflies, and spiders, fungal pathogen (attacks both nymph
+        and adult).
+    </string>
+    <string name="glh_hyperlink">
+        Source:
+        <a href="http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/insects">
+                    knowledgebank.irri.org
+        </a>
     </string>
  -------------------------------------------------<!--Rice Bug-->----------------------------------------------------
     <string name="rb_name">Rice Bug</string>
-    <string name="rb_sci">Leptocorisa acuta</string>
-    <string name="rb_lifeCycle">Young nymphs are green while adults are greenish‐brown. When the
-                                \ntemperature is high, and the insects are not feeding, they
-                                \ncamouflage themselves on the plant by taking up a particular
-                                \nposture.
-                                \nAdults longevity is 30‐50 days, although reports of 110‐115 days
-                                \nwhen reared individually. Mating starts 7‐14 days after becoming
-                                \nadult. Pre‐oviposition period is within 3‐4 days. Eggs hatch in 5‐8
-                                \ndays
-                                \nA female lays 200‐300 eggs in batches of 10‐20 eggs. Females rest
-                                \non grassy areas and the base of the plant during sunlight.
-                                <!--https://www.pinoyrice.com/wp-content/uploads/rice-bug.pdf-->
+    <string name="rb_sci_name">Leptocorisa acuta</string>
+    <string name="rb_does">
+            Rice bugs damage rice by sucking out the contents of developing grains from pre-flowering spikelets to soft dough stage,
+        therefore causing unfilled or empty grains and discoloration. Immature and adult rice bugs both feed on rice grains.
     </string>
-    <string name="rb_dmg">Adults and nymphs appear in the young crop with the early rains.
-            They suck sap from the developing grains at the milky stage.  All soft
-            milky grains are susceptible to attack. Panicles in heavily infested
-            fields remain erect.  Insect attack results in discolored or shriveled
-            grains; off‐smell of raw and cooked rice, and off‐flavor of straws,
-            which is unattractive to cattle.  Prior to grain formation, the bugs
-            feed on succulent shoots and leaves.  Nymphs cause more damage
-            than adults.
-            </string>
+    <string name="rb_why_where">
+        High rice bug populations are brought about by factors such as nearby woodlands, extensive weedy areas near rice fields, wild grasses near canals,
+        and staggered rice planting. The insect also becomes active when the monsoonal rains begin. Warm weather, overcast skies, and frequent drizzles favor
+        its population buildup.
+        \n
+        \nThe population of the rice bug increases at the end of the rainy season.
+        \n
+        \nRice bugs are found in all rice environments. They are more common in rainfed and upland rice and prefer the flowering to milky stages of the rice crop.
+        \n
+        \nAdults are active during the late afternoon and early morning. Under bright sunlight, they hide in grassy areas.
+        They are less active during the dry season. In cooler areas, the adults undergo a prolonged development in grasses.
+        They feed on wild hosts for one to two generations before migrating into the rice fields at the flowering stages.
+        The nymphs are found on the rice plant where they blend with the foliage. There, they are often left unnoticed.
+        When disturbed, the nymphs drop to the lower part of the plants and the adults fly within a short distance.
+    </string>
+    <string name="rb_identify">
+        Check the plant for feeding damage, such as
+        \n
+        \n-small or shriveled grains,
+        \n-deformed or spotty grains,
+        \n-empty grains, and
+        \n-erect panicles.
+        \n
+        \nThe symptoms can be confused with the damage caused by nutrient deficiency or flower thrips.
+        To confirm rice bug infestation, check for presence of insect:
+        \n
+        \noval, shiny, and reddish brown eggs along midrib of leaf
+        \nslender and brown-green nymphs and adults feeding on endosperm of rice grains
+        \noffensive smell
+    </string>
+    <string name="rb_important">
+        Both the adults and nymphs feed on grains at the milking stage. They can be serious pests of rice and sometimes reduce yield by as much as 30%.
+    </string>
     <string name="rb_pesticide">LAMDAXIN 2.5 EC \nTRUGOLD 60 EC \nSUPERSMAK 50 EC</string>
-    <string name="rb_activeI">LAMBDA-CYHALOTHRIN 25 g/L \nDIAZINON 600 g/L \nN CYPERMETHRIn 50g/L</string>
-    <string name="rb_mngmnt">Cultural
-                            \n• Eliminate grassy weeds from rice fields, levees, and surrounding areas by either cutting or
-                            burning to reduce habitats for egg‐laying.
-                            \n• Avoid staggered planting of fields in the area to break continuous food source.
-                            \n• Smoking the field by burning straw windward, and passing baskets or bags coated on the inside
-                            with sticky material are promising in repelling/capturing them.
-                            \n• Netting and handpicking bugs reduce their numbers.
-                            \n• Put attractants such as arasan or anything with bad odor like dead snails or rats. The bugs that
-                            are gathered around the attractants can be burned or sprayed with chemicals to reduce their
-                            numbers.
-                            \n• Awned varieties are resistant
-                            \n• Varieties with panicles enclosed in the leaf sheath for longer time offer some mechanical
-                            resistance to feeding.
-                            \n
-                            \nBiological
-                            \n• Small wasps and long‐horned grasshoppers kill eggs.
-                            \n• Fungal pathogens infect nymphs and adults.
-                            \n•Spiders, crickets, lady beetles, and long‐horned grasshoppers feed on nymphs and adults.  </string>
-
+    <string name="rb_active_ing">LAMBDA-CYHALOTHRIN 25 g/L \nDIAZINON 600 g/L \nN CYPERMETHRIn 50g/L</string>
+    <string name="rb_mngmnt">
+        1. Remove weeds from fields and surrounding areas to prevent the multiplication of rice bugs during fallow periods.
+        \n2. Level fields with even applications of fertilizer and water encourage rice to grow and develop is at the same rate.
+        Planting fields, within a village, at the same time (synchronous planting) also helps reduce rice bug problems.
+        \n3. Capturing rice bugs, in the early morning or late afternoon, by net can be effective at low rice bug densities, though labor intensive.
+        \n4. Encourage biological control agents: Some wasps, grasshoppers and spiders attack rice bugs or rice bug eggs.
+        Indiscriminate insecticide use disrupts biological control, resulting in pest resurgence.
+        \n
+        \n5. For chemical control
+        \n
+        \nBefore using a pesticide contact a crop protection specialist for suggestions, guidance, and warnings specific to your situation.
+        \n
+        \n1. Begin scouting the field at pre-flowering and continue daily until the hard dough stage.
+        Count rice bugs in the early morning or late afternoon from 20 hills while walking diagonally across a transplanted field.
+        Adults often fly out of the way before you reach the rice plant, so counts may only reveal immature forms.
+        Direct control may be required if there are more than 10 rice bugs/20 hills.
+        \n2. The choice of insecticide depends on many factors such as the application equipment available,
+        cost of the insecticide, experience of the applicator, or presence of fish. The benefits of using an
+        insecticide must be weighed against the risks to health and the environment.
+    </string>
+    <string name="rb_hyperlink">
+        Source:
+        <a href="http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/insects/item/rice-bug">
+            knowledgebank.irri.org
+        </a>
+    </string>
     -------------------------------------------------<!--Rice Black Bug-->----------------------------------------------------
     <string name="rbb_name">Rice Black Bug</string>
-    <string name="rbb_sci">Oryza sativa</string>
-    <string name="rbb_lifeCycle">
-        Female RBB deposits its eggs usually on the decaying outermost leaf sheaths on the basal part of the plants,
-        although some are laid on the lower part of the leaves.
-        \n The eggs are laid in mass of 40‐60 eggs, with one egg measuring to 1 mm long.
-        \n A single female RBB can lay about 200 eggs during its lifetime.  The eggs hatched 5‐7 days and become a full‐
-        grown adult after six weeks.
-        \n Adult RBB is oval‐shaped and measures about 8‐9 mm long
+    <string name="rbb_sci_name">Scotinophara coarctata</string>
+    <string name="rbb_does">
+        Black bugs remove the sap of the plant. They can cause browning of leaves, deadheart, and bugburn.
+        Their damage also causes stunting in plants, reduced tiller number, and formation of whiteheads.
+        \n
+        \nOn severe cases, black bugs weaken the plant preventing them from producing seeds.
     </string>
-    <string name="rbb_dmg">
-        • “Deadheart” – A condition of the plant wherein the damaged tillers’ center leaves turn brown and die.  This
-damage occurs when the infestation happens during the tillering stage.
-        \n• Panicles with empty grains or underdeveloped panicles.  This damage occurs when the infestation happens
-during the booting stage.
-        \n• “Bugburn” –   A condition of the plant wherein the leaves turn reddish brown, resulting in crop loss.  This
-damage occurs when the infestation happens from the seed bed, maximum tillering up to harvesting stage.</string>
-    <string name="rbb_pesticide">NIMBECIDINE \nCHIX 2.5 EC \nDECIS 2.5 EC</string>
-    <string name="rbb_activeI">DELTAMETHRIN 25 g/L \nBETA-CYPERMETHRIN 25 g/L \nAZADIRACHTIN 3g/L</string>
-    <string name="rbb_mngmnt">Integrated Management of Rice Black Bug
-        \n1. Grow Rice Black Bug (RBB)‐tolerant varieties.
-        \nUse tolerant varieties such as IR 1314, IR 44526, and
-        IR 10871‐75‐3‐2‐2 to minimize yield loss from RBB
-        attacks.  Grow these only in areas where tungro is
-        not a problem because these varieties are highly
-        susceptible to tungro.
-        \n2. Plant early‐maturing varieties during the regular planting time in the community.
-        \nSynchronous planting must be made over large contiguous areas, preferably over a 1 km radius within a
-        locality. This is to evade the damaging population levels of RBB and to break its life cycle.
-        \n3. Conserve and augment natural enemies of RBB.
-        \nConserve natural enemies of RBB by not using chemicals that will kill them. Augment natural enemies of RBB
-        by introducing parasitoids and pathogens in areas where they are not present.
-        \n4. Weed control (sanitation).
-        \nControl weeds to remove alternate hosts that serve as breeding sites for RBB.
-        \n5. Use trap crop.
-        \nEssentially, a trap crop is a small planting of a crop that is more attractive to RBB than the crop to be
-        protected. Use this to divert colonizing individuals of RBB to a trap crop where they can be destroyed.
-        \n6. Plow immediately after harvest.
-        \nAll stages of RBB are present on rice stubbles, thus incorporating the stubbles into the soil destroys their
-        breeding/hiding habitat.
-        \n7. Flood the field.
-        \nTo determine whether RBB eggs are parasitized or not, collect about 5 egg masses and place them inside a
-        container. Cover the mouth of the container with a nylon mesh and wait for about a week for parasitoids
-        (wasps) to emerge. If no wasps emerge, flood the area.
-        \n8. Release ducks in rice fields.
-        \nDucks eat RBB and other pests so release them in an
-        insecticide‐free rice fields with standing water about a month
-        after transplanting up to heading.
-        \n9. Apply metarhizium anisopliae
-        \nhttps://www.pinoyrice.com/wp-content/uploads/rice-black-bug.pdf</string>
+    <string name="rbb_why_where">
+        The insect is common in rainfed and irrigated wetland environments. It prefers continuously cropped
+        irrigated rice areas and poorly drained fields. Damages are observed more frequently in dry season rice crops and densely planted fields.
+        \n
+        \nBlack bug flight patterns are affected by the lunar cycle; on full moon nights, large numbers of adults swarm to light sources.
+        \n
+        \nStaggered planting of the rice crop and excessive nitrogen also favor the buildup of the pest. During non-rice periods,
+        the presence of alternate breeding site favors population increase.
+    </string>
+    <string name="rbb_identify">
+        1. Check leaves for discoloration. Black bug damage can cause reddish brown or yellowing of plants. Leaves also have chlorotic lesions.
+      \n2. Check for decreased tillering. Bugburn symptoms show wilting of tillers with no visible honeydew deposits or sooty molds.
+      \n3. Plants are also stunted; and can develop stunted panicles, no panicles, incompletely exerted panicles, and unfilled spikelets
+        or whiteheads at booting stage.
+      \n4. Check for deadhearts.
+      \n
+      \n Deadhearts can also be caused by stemborer. To confirm cause of damage, pull infected plants. In black bug damage,
+        infected plants cannot be pulled at the bases.
+      \n
+      \n Heavy infestation and "bugburn" is usually visible after heading or maturing.
+    </string>
+    <string name="rbb_important">
+        Black bug feeds on the rice plant from seedling to maturity growth stages. Ten black bug adults per hill can cause losses of up to 35% in some rice.
+    </string>
+    <string name="rbb_pesticide">
+        NIMBECIDINE
+        \nCHIX 2.5 EC
+        \nDECIS 2.5 EC
+    </string>
+    <string name="rbb_active_ing">
+        DELTAMETHRIN 25 g/L
+        \nBETA-CYPERMETHRIN 25 g/L
+        \nAZADIRACHTIN 3g/L
+    </string>
+    <string name="rbb_mngmnt">
+        Integrated Management of Rice Black Bug
+        \n
+        \nTo prevent black bug infestation:
+        \n1. Use resistant varieties.
+        \n   1.1 Contact your local agriculture office for up-to-date lists of varieties available.
+        \n2. Maintain a clean field by removing the weeds and drying the rice field after plowing.
+        \n3. Plant rice varieties of the same maturity date to break the insect’s cycle.
+        \n4. Use of mercury bulbs as light traps for egg-laying adults, light trapping of insects should start 5 days before and after the full moon.
+        \n5. Encourage biological control agents, such as small wasps (parasitize the eggs), ground beetles, spiders, crickets,
+        and red ants (attack the eggs, nymphs, and adults), coccinellid beetles, ducks, toads (feed on eggs and nymphs), fungi species (attacks nymphs and adults).
+        \n
+        \nTo control black bug infestation:
+        \n
+        \n1. During early infestation, raise the water level in the field for 2−3 days to force the insects to move upwards.
+        \n2. Flood the fields. This can cause higher egg mortality.
+        \n3. After harvest, plow fields to remove remaining insects.
+        \nSource:</string>
+    <string name="rbb_hyperlink">
+        <a href="http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/insects/item/black-bug">
+            knowledgebank.irri.org
+        </a>
+    </string>
 
     -------------------------------------------------<!--Rice Grain Bug-->----------------------------------------------------
     <string name="rgb_name">Rice Grain Bug</string>
-    <string name="rgb_sci"> Paraeuscosmetus pallicomis</string>
-    <string name="rgb_lifeCycle">Female RGB [lay] their eggs singly; [these are] whitish or transparent in color…then
+    <string name="rgb_sci_name"> Paraeuscosmetus pallicomis</string>
+    <string name="rgb_does">
+        RGB damage rice by sucking out the contents of developing grains from pre-flowering spikelets
+        to soft dough stage resulting [in] unfilled or empty grains and discoloration…Immature and adult rice grain bugs
+        both feed on rice grains.
+    </string>
+    <string name="rgb_why_where">
+        Female RGB [lay] their eggs singly; [these are] whitish or transparent in color…then
         [these turn] reddish to brown upon hatching.
         [A] newly emerged adult is light green to orange, while [a] fully developed adult [turns from] light brown to black
         in color and when disturbed or alarmed, hides among leaves, panicles, stubbles, and crevices…They can be seen walking
         or crawling, then [they] climb up and [go] down repeatedly from one rice [stubble] to another. It usually appears when
         the temperature becomes hotter, usually from 9 a.m. to 4 p.m., and [they can] be hardly found during [the] cool times
-        of the day.</string>
-    <string name="rgb_dmg"> RGB damage rice by sucking out the contents of developing grains from pre-flowering spikelets
-        to soft dough stage resulting [in] unfilled or empty grains and discoloration…Immature and adult rice grain bugs
-        both feed on rice grains.</string>
+        of the day.
+    </string>
+    <string name="rgb_identify">
+
+    </string>
+    <string name="rgb_important">
+
+    </string>
     <string name="rgb_pesticide">LAMDAXIN 2.5 EC \nAGRO CYPERMETHRIN 5 EC \nTRUGOLD 60 EC</string>
-    <string name="rgb_activeI">LAMBDA-CYHALOTHRIN 25 g/L \nN CYPERMETHRIN 50g/L \nDIAZINON 600 g/L</string>
+    <string name="rgb_active_ing">LAMBDA-CYHALOTHRIN 25 g/L \nN CYPERMETHRIN 50g/L \nDIAZINON 600 g/L</string>
     <string name="rgb_mngmnt">
         The land preparation is crucial in controlling the spread of the bug. RGB lays
         egg under the soil, and intensive plowing exposes their eggs to the sun, causing [these] to…[spoil, thus arresting]
@@ -215,24 +339,58 @@ damage occurs when the infestation happens from the seed bed, maximum tillering 
         \nSynchronous planting can help avoid [the] overlapping of [incidences] of insect population and disease occurrence.
         Harvesting at the same would enable farmers to observe the same fallow period (leaving the field idle for 30 days),
         which breaks [the] pest cycle and [destroys] its hosts.
-<!--    source: https://www.agriculture.com.ph/2017/12/30/debugging-the-rice-grain-bug/-->
+    </string>
+    <string name="rgb_hyperlink">
+        Source:
+        <a href=" source: https://www.agriculture.com.ph/2017/12/30/debugging-the-rice-grain-bug/">
+            agriculture.com.ph
+        </a>
     </string>
 
     -------------------------------------------------<!--Leaffolder-->----------------------------------------------------
     <string name="lf_name">Leaf Folder</string>
-    <string name="lf_sci"> Cnaphalocrocis medinalis</string>
-    <string name="lf_lifeCycle"> The adult rice leaffolder is a yellow-brown moth. Leaffolder caterpillars fold the rice leaves around
-            themselves and attach the leaf margins together with silk strands. Each female lays around 300 eggs at
-            night during a lifecycle of three to 10 days. Larvae are yellow, turn yellowish‐green with brown heads as
-            they mature, and are about 12‐25 mm long. Each larva can make two to four folded leaves. Pupa is about
-            9-12 mm long and is found inside the rolled leaf. Adults are yellow brown in color. Adults usually emerge in
-            the evening. Females lay eggs at night.
-<!--        https://pdf.usaid.gov/pdf_docs/PA00K8XK.pdf-->
-</string>
-    <string name="lf_dmg"> Leaffolder caterpillars fold a rice leaf around themselves and attach the leaf margins together with silk strands.
-        They feed inside the folded leaf creating longitudinal white and transparent streaks on the blade.</string>
+    <string name="lf_sci_name"> Cnaphalocrocis medinalis</string>
+    <string name="lf_does">
+        Leaffolder caterpillars fold a rice leaf around themselves and attach the leaf margins together with silk strands.
+        \nThey feed inside the folded leaf creating longitudinal white and transparent streaks on the blade.
+    </string>
+    <string name="lf_why_where">
+        Heavy use of fertilizer encourages rapid multiplication of the insect. High humidity and shady areas of the field,
+        as well as the presence of grassy weeds from rice fields and surrounding borders favor the development of the pest.
+        \n
+        \nExpanded rice areas with irrigation systems, multiple rice cropping and insecticide induced resurgences are important factors in the insect’s abundance.
+        \n
+        \nRice leaffolders occur in all rice environments and are more abundant during the rainy seasons.
+        They are commonly found in shady areas and areas where rice is heavily fertilized. In tropical rice areas,
+        they are active year-round, whereas in temperate countries they are active from May to October.
+        The adults are nocturnal and during the day, they stay under shade to escape predation. Moths fly short distances when disturbed.
+    </string>
+    <string name="lf_identify">
+        Check the plant for the following symptoms:
+        \n
+        \n-longitudinal and transparent whitish streaks on damaged leaves
+        \n-tubular folded leaves
+        \n-leaf tips sometimes fastened to the basal part of leaf
+        \n-heavily infested fields appear scorched with many folded leaves
+        \n
+        \nAlso check for presence of insects, particularly during tillering to flowering. Signs include:
+        \n
+        \n-disc-shaped ovoid eggs laid singly,
+        \n-young larvae feeding on the base of the youngest unopened leaves,
+        \n-folded leaves enclosing the feeding larvae, and
+        \n-present fecal matter.
+    </string>
+    <string name="lf_important">
+        The damage caused by leaffolders may be important when it affects more than half of the flag leaf and the next two youngest leaves in each tiller.
+        \n
+        \nAt vegetative phase, crops can generally recover from damage; but when leaffolders infest at reproductive phase,
+        the damage can be economically important. High feeding damage on the flag leaves can cause yield loss.
+        \n
+        \nMost early season insecticide use have little or no economic returns. Instead,
+        it can cause ecological disruptions in natural biological control processes, thus enhancing the development of secondary pests, such as planthoppers.
+    </string>
     <string name="lf_pesticide">TREBON 10 EC \nSUNO CYPERMETHRIN 5 EC \nTRUGOLD 60 EC</string>
-    <string name="lf_activeI">ETOFENPROX 25g/L \nCYPERMETHRIN 55 g/L n\DIAZINON 600g/L</string>
+    <string name="lf_active_ing">ETOFENPROX 25g/L \nCYPERMETHRIN 55 g/L n\DIAZINON 600g/L</string>
     <string name="lf_mngmnt">
         To prevent leaf folder outbreaks:
         \n• Use resistant varieties.
@@ -247,6 +405,11 @@ damage occurs when the infestation happens from the seed bed, maximum tillering 
         \nMany farmers in Asia lack the necessary safety equipment and expertise
         to use pesticides safely and therefore should not use them. See a crop
         protection specialist for guidance specific to your situation.
-<!--    http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/insects/item/rice-leaffolder-->
+    </string>
+    <string name="lf_hyperlink">
+        Source:
+        <a href="http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/insects/item/rice-leaffolder">
+            knowledgebank.irri.org.
+        </a>
     </string>
 </resources>

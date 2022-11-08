@@ -2,20 +2,12 @@ package com.mobileapp.inspestor_vr5
 
 import android.annotation.SuppressLint
 import android.app.Activity
-import android.content.ContentValues.TAG
-import android.content.Context
 import android.content.Intent
 import android.graphics.*
-import android.nfc.Tag
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
-import android.view.SurfaceControlViewHost
-import android.view.SurfaceHolder
-import android.view.SurfaceView
-import android.view.View
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -24,28 +16,14 @@ import androidx.activity.result.contract.ActivityResultContracts
 import com.mobileapp.inspestor_vr5.databinding.ActivityMainBinding
 import com.mobileapp.inspestor_vr5.ml.*
 import org.tensorflow.lite.support.image.TensorImage
-import java.io.IOException
-import java.lang.reflect.Modifier
 
 class MainActivity : AppCompatActivity() {
-
-//    companion object{
-//        fun newInstance() = MainActivity()
-//
-//        const val DESIRED_WIDTH_CROP_PERCENTAGE = 20
-//        const val DESIRED_HEIGHT_CROP_PERCENTAGE = 20
-//
-//        private const val RATIO_16_9_VALUE = 16.0 / 9.0
-//        private const val RATIO_12_6_VALUE = 12.0 / 6.0
-//        private const val TAG = "MainActivity"
-//    }
-
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var captured_Image: ImageView
     private lateinit var result_insect: TextView
     private lateinit var rec_act_ing_list: TextView
-    private lateinit var brand_name: TextView
+    //private lateinit var brand_name: TextView
 
     private val GALLERY_REQUEST_CODE = 123
 
@@ -58,8 +36,8 @@ class MainActivity : AppCompatActivity() {
 //Main app functions and buttons activation
         captured_Image = binding.capturedImage
         result_insect = binding.resultInsect
-        //rec_act_ing_list = binding.recActIngList
-        brand_name = binding.brandName
+        rec_act_ing_list = binding.recActIngList
+        //brand_name = binding.brandName
 
 
 
@@ -183,12 +161,13 @@ class MainActivity : AppCompatActivity() {
             }
         }
         val detectionResult=outputs[0]
-        if(detectionResult.scoreAsFloat <= .25){
-            result_insect.text="No pest detected"
-            //rec_act_ing_list.text=" "
-            brand_name.text=""
+        if(detectionResult.scoreAsFloat <= .80){
+            result_insect.text= "NOT IN THE LIST, TRY AGAIN"
+            rec_act_ing_list.text=" "
+            //brand_name.text=""
+            result_insect.setTextColor(Color.RED)
             binding.cardResult.setOnClickListener{
-                Toast.makeText(this,"No pest detected, Try again. ", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Not in the list, Try again. ", Toast.LENGTH_SHORT).show()
             }
 
         }else{
@@ -198,8 +177,8 @@ class MainActivity : AppCompatActivity() {
 
             when (detectionResult.categoryAsString) {
                 "Rice Grain Bug" -> {
-                    //binding.recActIngList.text=resources.getString(R.string.rgb_activeI)
-                    binding.brandName.text = resources.getString(R.string.rgb_pesticide)
+                    binding.recActIngList.text=resources.getString(R.string.rgb_active_ing)
+                    //binding.brandName.text = resources.getString(R.string.rgb_pesticide)
 
                     binding.cardResult.setOnClickListener {
                         startActivity(
@@ -209,8 +188,8 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
                 "Rice Bug" -> {
-                    //binding.recActIngList.text=resources.getString(R.string.rb_activeI)
-                    binding.brandName.text = resources.getString(R.string.rb_pesticide)
+                    binding.recActIngList.text=resources.getString(R.string.rb_active_ing)
+                    //binding.brandName.text = resources.getString(R.string.rb_pesticide)
 
                     binding.cardResult.setOnClickListener {
                         startActivity(
@@ -221,8 +200,8 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 "Brown Planthopper" -> {
-                    //binding.recActIngList.text=resources.getString(R.string.bph_activeI)
-                    binding.brandName.text = resources.getString(R.string.bph_pesticide)
+                    binding.recActIngList.text=resources.getString(R.string.bph_active_ing)
+                    //binding.brandName.text = resources.getString(R.string.bph_pesticide)
 
                     binding.cardResult.setOnClickListener {
                         startActivity(
@@ -233,8 +212,8 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 "Leaf Folder" -> {
-                    //binding.recActIngList.text=resources.getString(R.string.lf_activeI)
-                    binding.brandName.text = resources.getString(R.string.lf_pesticide)
+                    binding.recActIngList.text=resources.getString(R.string.lf_active_ing)
+                    //binding.brandName.text = resources.getString(R.string.lf_pesticide)
 
                     binding.cardResult.setOnClickListener {
                         startActivity(
@@ -245,8 +224,8 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 "Green Planthopper" -> {
-                    //binding.recActIngList.text=resources.getString(R.string.glh_activeI)
-                    binding.brandName.text = resources.getString(R.string.glh_pesticide)
+                    binding.recActIngList.text=resources.getString(R.string.glh_active_ing)
+                    //binding.brandName.text = resources.getString(R.string.glh_pesticide)
 
                     binding.cardResult.setOnClickListener {
                         startActivity(
@@ -257,8 +236,8 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 "Rice Black Bug" -> {
-                    //binding.recActIngList.text=resources.getString(R.string.rbb_activeI)
-                    binding.brandName.text = resources.getString(R.string.rbb_pesticide)
+                    binding.recActIngList.text=resources.getString(R.string.rbb_active_ing)
+                    //binding.brandName.text = resources.getString(R.string.rbb_pesticide)
 
                     binding.cardResult.setOnClickListener {
                         startActivity(
