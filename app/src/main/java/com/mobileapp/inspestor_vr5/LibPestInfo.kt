@@ -1,5 +1,6 @@
 package com.mobileapp.inspestor_vr5
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -11,28 +12,12 @@ import com.mobileapp.inspestor_vr5.databinding.ActivityLibPestInfoBinding
 
 class LibPestInfo : AppCompatActivity() {
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityLibPestInfoBinding.inflate(layoutInflater)
         val view: View = binding.root
         setContentView(view)
-
-        //val url = findViewById<TextView>(R.id.link)
-        //url.movementMethod=LinkMovementMethod.getInstance()
-        //val topBar = binding.navBar
-        //val textBar = binding.topBarText
-        //topBar.alpha = 0f
-        //textBar.alpha = 0f
-
-        //binding.scroller.viewTreeObserver.addOnScrollChangedListener {
-         //   val maxDistance = binding.carouselView.height
-           // val movement = binding.scroller.scrollY
-           // val alphaFactor: Float = ((movement * 1.0f) / (maxDistance - topBar.height))
-           // if (movement in 0..maxDistance) {
-           //     topBar.alpha = alphaFactor
-             //   textBar.alpha = alphaFactor
-           // }
-       // }
 
         val card = intent.getStringExtra("card")
 
@@ -43,13 +28,9 @@ class LibPestInfo : AppCompatActivity() {
         binding.pestMngmntTitle.text= "Management Recommendation"
         binding.pestRecTitle.text= "Recommended Pesticide List"
         binding.pestActiList.text="Active Ingredient"
-        //hyperlink
-        binding.link.movementMethod= LinkMovementMethod.getInstance()
-
         when (card) {
             "bph_card" -> {
-                binding.topBarText.text = "Brown Planthopper"
-                binding.pestLabel.text = binding.topBarText.text
+                binding.pestLabel.text = "Brown Planthopper"
                 binding.pestSciDesc.text = resources.getString(R.string.bph_sci_name)
                 binding.pestDoesDesc.text = resources.getString(R.string.bph_does)
                 binding.pestIdentifyDesc.text= resources.getString(R.string.bph_identify)
@@ -87,8 +68,7 @@ class LibPestInfo : AppCompatActivity() {
             }
 
             "glh_card" -> {
-                binding.topBarText.text = "Green Planthopper "
-                binding.pestLabel.text = binding.topBarText.text
+                binding.pestLabel.text = "Green Planthopper "
                 binding.pestSciDesc.text = resources.getString(R.string.glh_sci_name)
                 binding.pestDoesDesc.text = resources.getString(R.string.glh_does)
                 binding.pestIdentifyDesc.text= resources.getString(R.string.glh_identify)
@@ -127,9 +107,7 @@ class LibPestInfo : AppCompatActivity() {
             }
 
             "rb_card" -> {
-                binding.topBarText.text = "Rice Bug"
-                binding.pestLabel.text = binding.topBarText.text
-                binding.pestLabel.text = binding.topBarText.text
+                binding.pestLabel.text = "Rice Bug"
                 binding.pestSciDesc.text = resources.getString(R.string.rb_sci_name)
                 binding.pestDoesDesc.text = resources.getString(R.string.rb_does)
                 binding.pestIdentifyDesc.text= resources.getString(R.string.rb_identify)
@@ -170,9 +148,7 @@ class LibPestInfo : AppCompatActivity() {
             }
 
             "rbb_card" -> {
-                binding.topBarText.text = "Rice Black Bug"
-                binding.pestLabel.text = binding.topBarText.text
-                binding.pestLabel.text = binding.topBarText.text
+                binding.pestLabel.text = "Rice Black Bug"
                 binding.pestSciDesc.text = resources.getString(R.string.rbb_sci_name)
                 binding.pestDoesDesc.text = resources.getString(R.string.rbb_does)
                 binding.pestIdentifyDesc.text= resources.getString(R.string.rbb_identify)
@@ -211,9 +187,7 @@ class LibPestInfo : AppCompatActivity() {
             }
 
             "rgb_card" -> {
-                binding.topBarText.text = "Rice Grain Bug"
-                binding.pestLabel.text = binding.topBarText.text
-                binding.pestLabel.text = binding.topBarText.text
+                binding.pestLabel.text = "Rice Grain Bug"
                 binding.pestSciDesc.text = resources.getString(R.string.rgb_sci_name)
                 binding.pestDoesDesc.text = resources.getString(R.string.rgb_does)
                 binding.pestIdentifyDesc.text= resources.getString(R.string.rgb_identify)
@@ -252,9 +226,7 @@ class LibPestInfo : AppCompatActivity() {
             }
 
             "lf_card" -> {
-                binding.topBarText.text = "Leaf Folder"
-                binding.pestLabel.text = binding.topBarText.text
-                binding.pestLabel.text = binding.topBarText.text
+                binding.pestLabel.text = "Leaf Folder"
                 binding.pestSciDesc.text = resources.getString(R.string.lf_sci_name)
                 binding.pestDoesDesc.text = resources.getString(R.string.lf_does)
                 binding.pestIdentifyDesc.text= resources.getString(R.string.lf_identify)

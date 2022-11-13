@@ -15,29 +15,16 @@ class Library : AppCompatActivity(), View.OnClickListener {
 
         //binding.libTitle.text=resources.getString(R.string.lib_title)
 
-        //set opacity of cardBar
-        //val topBar=binding.navBar
-        //val textBar=binding.libTitle
-        //topBar.alpha=0f
-       // textBar.alpha=0f
-
-        //for scrolling, opacity increases if scroll up
-        //binding.scrollView.viewTreeObserver.addOnScrollChangedListener {
-          //  val maxDistance = binding.bphBtn.height
-          //  val movement=binding.scrollView.scrollY
-          //  val alphaFactor:Float = ((movement*1.0f)/(maxDistance-topBar.height))
-           // if(movement in 0..maxDistance){
-          //      topBar.alpha=alphaFactor
-           //     textBar.alpha=alphaFactor
-          //  }
-       // }
-
         binding.bphBtn.setOnClickListener(this)
         binding.glfBtn.setOnClickListener(this)
         binding.rbBtn.setOnClickListener(this)
         binding.rbbBtn.setOnClickListener(this)
         binding.rgbBtn.setOnClickListener(this)
         binding.lfBtn.setOnClickListener(this)
+
+        binding.manBtn.setOnClickListener {
+            startActivity(Intent(this, Instruction::class.java))
+        }
 
         binding.backBtn.setOnClickListener {
             finish()

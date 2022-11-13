@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import com.mobileapp.inspestor_vr5.onboarding.MainOnBoardingActivity
+import com.mobileapp.inspestor_vr5.onboarding.OnboardMain
 
 class SplashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +13,7 @@ class SplashScreen : AppCompatActivity() {
         supportActionBar?.hide()
 
         Handler().postDelayed({
-            val intent = Intent(this@SplashScreen, MainOnBoardingActivity::class.java)
+            val intent = Intent(this@SplashScreen, OnboardMain::class.java)
             startActivity(intent)
             finish()
         }, 2000)

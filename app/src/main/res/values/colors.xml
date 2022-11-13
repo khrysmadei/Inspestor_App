@@ -9,7 +9,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <!--app background-->
-    <color name="app_bg">#FDF3E6</color>
+    <color name="app_bg">#FFFFFF</color>
     <color name="clkble_bg">#E1D4CA</color>
 
     <!--title text color green-->
@@ -22,4 +22,16 @@
     <color name="sub_color">#EBDC84</color>
     <!--buttons-->
     <color name="btn_color">#67545A</color>
+    <color name="btn_orange">#f4d4cc</color>
+
+    <!--new color-->
+    <color name="new_bg">#eaebf3</color>
+    <color name="orange1">#fc6e51</color>
+    <color name="orange2">#e9573f</color>
+    <color name="orange3">#FBCEB1</color>
+    <color name="orange4">#F2D2BD</color>
+    <color name="grey1">#f5f7fa</color>
+    <color name="grey2">#e6e9ed</color>
+    <color name="green1">#4ab388</color>
+    <color name="green2">#75c09f</color>
 </resources>

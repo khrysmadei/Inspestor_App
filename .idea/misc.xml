@@ -4,30 +4,52 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/app_launcher_background.xml" value="0.137" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/btn_dark_orange_allsides_normal.xml" value="0.156" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/btn_dark_orange_allsides_pressed.xml" value="0.156" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/btn_dark_orange_allsides_selector.xml" value="0.156" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/btn_green_allsides_rounded_normal.xml" value="0.178" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/btn_green_allsides_rounded_pressed.xml" value="0.178" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/btn_green_allsides_rounded_selector.xml" value="0.178" />
         <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/btn_green_rounded_normal.xml" value="0.1195" />
         <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/btn_green_rounded_pressed.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/btn_green_rounded_selector.xml" value="0.224" />
         <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/btn_grey_rounded_normal.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/btn_grey_rounded_pressed.xml" value="0.1195" />
         <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/btn_grey_rounded_selector.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/btn_orange_allsides_rounded_normal.xml" value="0.178" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/btn_orange_allsides_rounded_pressed.xml" value="0.178" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/btn_orange_allsides_rounded_selector.xml" value="0.178" />
         <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/btn_orange_rounded_normal.xml" value="0.1" />
-        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/btn_orange_rounded_pressed.xml" value="0.2345" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/btn_orange_rounded_pressed.xml" value="0.176" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/btn_orange_rounded_selector.xml" value="0.1675" />
         <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/onboarding_selected_dot_blue.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/onboarding_selected_dot_green.xml" value="0.224" />
         <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/onboarding_unselected_dot_blue.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/onboarding_unselected_dot_green.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/onboarding_viewpager_selector_green.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/drawable/onbooarding_viewpager_selector_blue.xml" value="0.1" />
-        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/activity_instruction.xml" value="0.275" />
-        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/activity_lib_pest_info.xml" value="0.36153846153846153" />
-        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/activity_library.xml" value="0.20502092050209206" />
-        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/activity_main.xml" value="0.49256505576208176" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/activity_a_board.xml" value="0.25555555555555554" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/activity_b_board.xml" value="0.25555555555555554" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/activity_c_board.xml" value="0.25555555555555554" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/activity_d_board.xml" value="0.25555555555555554" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/activity_info.xml" value="0.4" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/activity_instruction.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/activity_lib_pest_info.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/activity_library.xml" value="0.3075734157650695" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/activity_main_on_boarding.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/activity_onboard_main.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/activity_splash_screen.xml" value="0.12760416666666666" />
-        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/activity_view_pager_adapter.xml" value="0.27447916666666666" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/activity_view_pager_adapter.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/camera_layout.xml" value="0.19074074074074074" />
         <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/camera_preview.xml" value="0.27447916666666666" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/fragment_a_board.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/fragment_b_board.xml" value="0.27447916666666666" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/fragment_first_screen.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/fragment_on_board.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/fragment_onboard.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/fragment_view_pager.xml" value="0.176" />
+        <entry key="..\:/AndroidStudioProjects/Inspestor5v2.1/app/src/main/res/layout/onboard_page_screen.xml" value="0.2" />
         <entry key="..\:/Users/khrysma/AndroidStudioProjects/Inspestor_vr5 _2/app/src/main/res/drawable/appLauncher_background.xml" value="0.1675" />
         <entry key="..\:/Users/khrysma/AndroidStudioProjects/Inspestor_vr5 _2/app/src/main/res/mipmap-anydpi-v26/appLauncher.xml" value="0.1675" />
         <entry key="..\:/Users/khrysma/AndroidStudioProjects/Inspestor_vr5 _2/app/src/main/res/mipmap-anydpi-v26/appLauncher_round.xml" value="0.1675" />
@@ -46,9 +68,6 @@
         <entry key="..\:/Users/khrysma/AndroidStudioProjects/thesis app versions/Inspestor5v2/app/src/main/res/layout/image_border.xml" value="0.13703703703703704" />
       </map>
     </option>
-  </component>
-  <component name="ProjectPlainTextFileTypeManager">
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/onbooarding_viewpager_selector_blue.xml" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
