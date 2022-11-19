@@ -6,14 +6,15 @@ import android.os.Bundle
 import android.view.View
 import com.mobileapp.inspestor_vr5.databinding.ActivityLibraryBinding
 
-class Library : AppCompatActivity(), View.OnClickListener {
+class Library : AppCompatActivity(), View.OnClickListener{
+
+    private lateinit var binding: ActivityLibraryBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding =ActivityLibraryBinding.inflate(layoutInflater)
-        val view: View = binding.root
+        binding = ActivityLibraryBinding.inflate(layoutInflater)
+        val view = binding.root
         setContentView(view)
-
-        //binding.libTitle.text=resources.getString(R.string.lib_title)
 
         binding.bphBtn.setOnClickListener(this)
         binding.glfBtn.setOnClickListener(this)

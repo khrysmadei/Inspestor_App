@@ -113,7 +113,7 @@ class MainActivity : AppCompatActivity() {
     }
     @SuppressLint("SetTextI18n")
     private fun outputGenerator(bitmap: Bitmap){
-        val TestTrainModel = Testtrainmetadata640x640WbgPbg.newInstance(this)
+        val TestTrainModel = Testtrainmetadataepoch10w100k.newInstance(this)
 
         //Creates inputs for reference.
         val newBitmap = bitmap.copy(Bitmap.Config.ARGB_8888, true)
@@ -126,16 +126,18 @@ class MainActivity : AppCompatActivity() {
             }
         }
         val detectionResult=outputs[0]
-        if(detectionResult.scoreAsFloat <= .80){
-            result_insect.text= "NOT IN THE LIST, TRY AGAIN"
+        if(detectionResult.scoreAsFloat <= .75){
+            result_insect.text= "NOT IN THE LIST"
             //rec_act_ing_list.text=" "
-            brand_name.text=""
+            brand_name.text=" "
             result_insect.setTextColor(Color.RED)
             binding.cardResult.setOnClickListener{
-                Toast.makeText(this,"Not in the list, Try again. ", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Not in the list", Toast.LENGTH_SHORT).show()
             }
 
         }else{
+            //val conLevel= "%.2f".format(detectionResult.scoreAsFloat) + "%"
+           // result_insect.text = detectionResult.categoryAsString + " " + conLevel
             result_insect.text = detectionResult.categoryAsString + " " + detectionResult.scoreAsFloat
             result_insect.setTextColor(Color.BLACK)
             //prob_score.text= detectionResult.scoreAsFloat + ""
@@ -189,7 +191,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
-                "Green Planthopper" -> {
+                "Green Leafhopper" -> {
                     //binding.recActIngList.text=resources.getString(R.string.glh_active_ing)
                     binding.brandName.text = resources.getString(R.string.glh_pesticide)
 

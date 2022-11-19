@@ -55,7 +55,7 @@
     <string name="manual">How to identify insect using Inspestor</string>
     <string name="man_sub">Instructions to use our app:</string>
     <string name="one">1. To accurately detect insect pests,place the insect at the center of the camera preview and zoom in if
-                        possible. The lighting should not be directed to the insect,and the camera should focus on the insect.</string>
+                        possible. Have proper lighting, the lighting should not be directed to the insect, and the camera should focus on the insect.</string>
     <string name="two">2. Click on the camera button to capture the insect pest or the gallery to upload an image.</string>
     <string name="three">3. After capturing or uploading, click OK to process the image.</string>
     <string name="four">4. Inspestor will provide results of the kind of insect pest and then recommend generic pesticides
@@ -75,7 +75,7 @@
         \nPaola Bianca Zarriz
     </string>
     <string name="thesis">
-        This is a thesis project created by BS Information Technology from CICT-WVSU.
+        This is a thesis project created by BS Information Technology students from CICT-WVSU.
         S.Y. 2022 - 2023
     </string>
     <string name="ack">

@@ -21,8 +21,7 @@
         <activity
             android:name=".onboarding.MainOnBoardingActivity"
             android:exported="false"
-            android:label="@string/title_activity_main_on_boarding"
-            android:theme="@style/Theme.Inspestor_vr5.NoActionBar" />
+            android:label="@string/title_activity_main_on_boarding" />
         <activity
             android:name=".LibPestInfo"
             android:exported="false" />
@@ -37,8 +36,7 @@
             android:exported="false" />
         <activity
             android:name=".SplashScreen"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

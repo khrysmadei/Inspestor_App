@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background3"
+    android:background="@color/app_bg"
     tools:context=".MainActivity">
 
     <View
@@ -43,8 +43,8 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto"
                     android:text="@string/slogan"
+                    android:textColor="@color/brownish"
                     android:textSize="11sp"
-                    android:textColor="@color/green1"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/app_title" />
@@ -171,6 +171,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -193,7 +194,7 @@
                     android:layout_width="250dp"
                     android:layout_height="225dp"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/picture"
+                    android:src="@drawable/image"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.487"
                     app:layout_constraintStart_toStartOf="parent"
@@ -231,7 +232,7 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/btn_dark_orange_allsides_selector">
+                        android:background="@drawable/btn_green_allsides_rounded_selector">
 
                         <ImageView
                             android:id="@+id/camera"
@@ -277,7 +278,7 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/btn_dark_orange_allsides_selector">
+                        android:background="@drawable/btn_green_allsides_rounded_selector">
 
                         <ImageView
                             android:id="@+id/gallery"
@@ -323,16 +324,19 @@
                 android:clickable="true"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="2dp"
+                android:backgroundTint="@color/clkble_bg"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/spacer_three"
-                app:strokeColor="@color/white">
+                app:strokeColor="@color/brownish"
+                app:strokeWidth="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/btn_orange_allsides_rounded_selector"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
                     android:orientation="vertical">
 
                     <TextView

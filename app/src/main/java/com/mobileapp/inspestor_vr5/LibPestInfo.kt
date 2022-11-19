@@ -1,12 +1,9 @@
 package com.mobileapp.inspestor_vr5
 
 import android.annotation.SuppressLint
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.method.LinkMovementMethod
 import android.view.View
-import android.widget.TextView
 import com.limerse.slider.model.CarouselItem
 import com.mobileapp.inspestor_vr5.databinding.ActivityLibPestInfoBinding
 
@@ -68,7 +65,7 @@ class LibPestInfo : AppCompatActivity() {
             }
 
             "glh_card" -> {
-                binding.pestLabel.text = "Green Planthopper "
+                binding.pestLabel.text = "Green Leafhopper "
                 binding.pestSciDesc.text = resources.getString(R.string.glh_sci_name)
                 binding.pestDoesDesc.text = resources.getString(R.string.glh_does)
                 binding.pestIdentifyDesc.text= resources.getString(R.string.glh_identify)

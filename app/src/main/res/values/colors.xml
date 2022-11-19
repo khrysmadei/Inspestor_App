@@ -9,9 +9,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <!--app background-->
-    <color name="app_bg">#FFFFFF</color>
-    <color name="clkble_bg">#E1D4CA</color>
-
+    <color name="app_bg">#E1D4CA</color>
+    <color name="clkble_bg">#FDF1E1</color>
+    <color name="view_bg"></color>
     <!--title text color green-->
     <color name="title_color">#459354</color>
     <color name="green_1">#39b54a</color>
@@ -32,6 +32,14 @@
     <color name="orange4">#F2D2BD</color>
     <color name="grey1">#f5f7fa</color>
     <color name="grey2">#e6e9ed</color>
-    <color name="green1">#4ab388</color>
-    <color name="green2">#75c09f</color>
+
+
+    <color name="green1">#222126</color>
+    <color name="green2">#73707E</color>
+    <color name="blue1">#5dbae4</color>
+    <color name="blue2">#a1e3e5</color>
+
+
+    <color name="brownish">#3d3b30</color>
+    <color name="greenish">#B9F6CA</color>
 </resources>

@@ -16,12 +16,12 @@ class ViewPagerAdapter(
            0 -> OnBoardFragment.newInstance(
                 context.resources.getString(R.string.onboard_title1),
                 context.resources.getString(R.string.onboard_desc1),
-                R.raw.welcome
+                R.raw.welcomenew
                 )
             1 -> OnBoardFragment.newInstance(
                 context.resources.getString(R.string.onboard_title2),
                 context.resources.getString(R.string.onboard_desc2),
-                R.raw.zoom
+                R.raw.zoomnew
                 )
             else -> OnBoardFragment.newInstance(
                 context.resources.getString(R.string.onboard_title3),

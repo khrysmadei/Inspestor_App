@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background3"
+    android:background="@color/app_bg"
     tools:context=".Library">
 
 
@@ -132,7 +132,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="5dp"
                 android:clickable="true"
-                android:backgroundTint="@color/btn_orange"
+                android:backgroundTint="@color/clkble_bg"
                 android:foreground="?android:attr/selectableItemBackgroundBorderless"
                 app:cardCornerRadius="15dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -149,7 +149,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="105dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/bph1"
+                        android:src="@drawable/bph0"
                         app:layout_constraintTop_toTopOf="parent"/>
 
                     <TextView
@@ -186,7 +186,7 @@
                 android:layout_height="200dp"
                 android:layout_marginTop="15dp"
                 android:clickable="true"
-                android:backgroundTint="@color/btn_orange"
+                android:backgroundTint="@color/clkble_bg"
                 android:foreground="?android:attr/selectableItemBackgroundBorderless"
                 app:cardCornerRadius="15dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -202,7 +202,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="105dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/glh1"
+                        android:src="@drawable/glh0"
                         app:layout_constraintTop_toTopOf="parent"/>
 
                     <TextView
@@ -237,7 +237,7 @@
                 android:layout_height="200dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="5dp"
-                android:backgroundTint="@color/btn_orange"
+                android:backgroundTint="@color/clkble_bg"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackgroundBorderless"
                 app:cardCornerRadius="15dp"
@@ -253,7 +253,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="105dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/rb1"
+                        android:src="@drawable/rb0"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
@@ -289,7 +289,7 @@
                 android:layout_height="200dp"
                 android:layout_marginTop="15dp"
                 android:clickable="true"
-                android:backgroundTint="@color/btn_orange"
+                android:backgroundTint="@color/clkble_bg"
                 android:foreground="?android:attr/selectableItemBackgroundBorderless"
                 app:cardCornerRadius="15dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -305,7 +305,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="105dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/rbb2"
+                        android:src="@drawable/rbb0"
                         app:layout_constraintTop_toTopOf="parent"/>
 
                     <TextView
@@ -342,7 +342,7 @@
                 android:layout_height="200dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="5dp"
-                android:backgroundTint="@color/btn_orange"
+                android:backgroundTint="@color/clkble_bg"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackgroundBorderless"
                 app:cardCornerRadius="15dp"
@@ -358,7 +358,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="105dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/rgb1"
+                        android:src="@drawable/rgb0"
                         app:layout_constraintTop_toTopOf="parent"/>
 
                     <TextView
@@ -394,7 +394,7 @@
                 android:layout_height="200dp"
                 android:layout_marginTop="15dp"
                 android:clickable="true"
-                android:backgroundTint="@color/btn_orange"
+                android:backgroundTint="@color/clkble_bg"
                 android:foreground="?android:attr/selectableItemBackgroundBorderless"
                 app:cardCornerRadius="15dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -410,7 +410,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="105dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/lf1"
+                        android:src="@drawable/lf0"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
@@ -476,7 +476,7 @@
                 android:layout_height="100dp"
                 android:layout_marginTop="15dp"
                 android:clickable="true"
-                android:backgroundTint="@color/orange1"
+                android:backgroundTint="@color/brownish"
                 android:foreground="?android:attr/selectableItemBackgroundBorderless"
                 app:cardCornerRadius="15dp"
                 app:layout_constraintEnd_toEndOf="parent"
