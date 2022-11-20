@@ -113,7 +113,7 @@ class MainActivity : AppCompatActivity() {
     }
     @SuppressLint("SetTextI18n")
     private fun outputGenerator(bitmap: Bitmap){
-        val TestTrainModel = TestTrainMetadataEpoch50AllBG.newInstance(this)
+        val TestTrainModel =TestTrainMetadataEpoch50AllBG.newInstance(this)
 
         //Creates inputs for reference.
         val newBitmap = bitmap.copy(Bitmap.Config.ARGB_8888, true)
