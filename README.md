@@ -15,11 +15,11 @@ Therefore, identifying insect pests and beneficial insects accurately to target 
  
 # Developers
 
- ALyza Marie Tarrazona :cat:  Documents and Labelling
- Poala Bianca Zarriz :milky_way:  Documents and Labelling
- Clarnick Yap :rainbow:  Documents and Labelling
- Clarence Gealon :guitar: Back-End
- Khrysma Dei Caldina :coffee: Front-End
+- ALyza Marie Tarrazona :cat:  Documents and Labelling
+- Poala Bianca Zarriz :milky_way:  Documents and Labelling
+- Clarnick Yap :rainbow:  Documents and Labelling
+- Clarence Gealon :guitar: Back-End
+- Khrysma Dei Caldina :coffee: Front-End
 
 # Library used
 - Lottie Library : https://lottiefiles.com
