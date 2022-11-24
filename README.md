@@ -1,4 +1,4 @@
-![inspestor logo](https://raw/githubusercontent.com/Inspestor_App/app/src/main/res/drawable/thesis_logo_2.png)
+![inspestor logo](https://raw/githubusercontent.com/master/.github/Inspestor_App/app/src/main/res/drawable/thesis_logo_2.png)
 
 # Inspestor_App
 # Motivation
