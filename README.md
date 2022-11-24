@@ -11,7 +11,7 @@ Therefore, identifying insect pests and beneficial insects accurately to target 
  - User Instructions 
  - Insect Pests Managements, Damages and etc. 
  
- #App Sample Screens
+ # App Sample Screens
  ![main](https://github.com/khrysmadei/Inspestor_App/blob/master/docs/app%20screenshots/Homepage.jpg)
  ![lin](https://github.com/khrysmadei/Inspestor_App/blob/master/docs/app%20screenshots/Library.jpg)
  ![info](https://github.com/khrysmadei/Inspestor_App/blob/master/docs/app%20screenshots/Pest_info.jpg)
