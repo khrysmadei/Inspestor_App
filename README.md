@@ -32,6 +32,7 @@ Therefore, identifying insect pests and beneficial insects accurately to target 
 # Library used
 - Lottie Library : https://lottiefiles.com
 - Onboarding: https://github.com/gabriel-TheCode/OnboardingViewPagerExamples
+- CArousel VIew: https://github.com/akshaaatt/Sliding-Carousel
 
 # License 
 MIT License
