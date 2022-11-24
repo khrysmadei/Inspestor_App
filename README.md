@@ -10,7 +10,13 @@ Therefore, identifying insect pests and beneficial insects accurately to target 
  - Insect Pests Library (Six major insect pest found on Rice Fields)
  - User Instructions 
  - Insect Pests Managements, Damages and etc. 
- ![video] 
+ 
+ #App Sample Screens
+ ![main](https://github.com/khrysmadei/Inspestor_App/blob/master/docs/app%20screenshots/Homepage.jpg)
+ ![lin](https://github.com/khrysmadei/Inspestor_App/blob/master/docs/app%20screenshots/Library.jpg)
+ ![info](https://github.com/khrysmadei/Inspestor_App/blob/master/docs/app%20screenshots/Pest_info.jpg)
+ 
+ 
  # Training 
  The developers used SSD MobileNet based on Deep Learning, the training datasets were personally collected and captured by the developers. 
  A total of 4,000 images in different angles each insects were trained.
