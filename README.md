@@ -1,5 +1,6 @@
-![logo_inspestor](https://github.com/khrysmadei/Inspestor_App/blob/master/app/src/main/res/drawable/thesis_logo_2.png)
 # Inspestor_App
+![logo_inspestor](https://github.com/khrysmadei/Inspestor_App/blob/master/app/src/main/res/drawable/thesis_logo_2.png)
+
 # Motivation
 Rice is Asia's most significant and major staple crop, particularly in the Philippines. The agricultural sector generates 14 perccent of the country's  GDP and employs 13 million people (32% of the total workforce) (Arnaoudov et al., n.d.).
 Therefore, identifying insect pests and beneficial insects accurately to target pesticides only on insect pests is necessary to avoid sustained economic damage and retain beneficial insects in the rice fields.
