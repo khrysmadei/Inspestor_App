@@ -37,7 +37,7 @@ Therefore, identifying insect pests and beneficial insects accurately to target 
 # License 
 MIT License
 
-Copyright (c) .2022. khrysmadei.
+Copyright (c) .2022. khrysmadei&company.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
