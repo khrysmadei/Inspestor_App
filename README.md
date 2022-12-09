@@ -18,8 +18,7 @@ Therefore, identifying insect pests and beneficial insects accurately to target 
  
  
  # Training 
- The developers used SSD MobileNet based on Deep Learning, the training datasets were personally collected and captured by the developers. 
- A total of 4,000 images in different angles each insects were trained.
+The developers used SSD MobileNet based on Deep Learning while the training datasets were personally collected and captured by the developers. A total of 4,000 images at different angles were trained on each insect pest, consisting of an overall 24,000-image dataset.
  
 # Developers
 
