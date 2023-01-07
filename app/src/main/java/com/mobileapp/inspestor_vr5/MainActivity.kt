@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
 
         //Main app functions and buttons activation
-        captured_Image = binding.capturedImage
+            //captured_Image = binding.capturedImage
         result_insect = binding.resultInsect
         //rec_act_ing_list = binding.recActIngList
         brand_name = binding.brandName

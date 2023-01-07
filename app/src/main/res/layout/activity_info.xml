@@ -109,37 +109,71 @@
                 android:textStyle="bold"
                 app:layout_constraintTop_toTopOf="parent"/>
 
-            <ImageView
-                android:id="@+id/logo"
-                android:layout_marginTop="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="75dp"
-                android:src="@drawable/thesis_logo_2"
-                app:layout_constraintTop_toBottomOf="@id/about_us"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="ContentDescription" />
-
-            <TextView
-                android:id="@+id/team"
-                android:layout_width="280dp"
+            <RelativeLayout
+                android:id="@+id/logos_school"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
+                android:orientation="horizontal"
                 android:layout_marginTop="10dp"
-                android:text="@string/thesis"
-                android:textColor="@color/black"
-                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/logo"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/logo" />
+                app:layout_constraintTop_toBottomOf="@id/about_us">
+
+                <ImageView
+                    android:id="@+id/cict_logo"
+                    android:layout_width="123dp"
+                    android:layout_height="123dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginEnd="43dp"
+                    android:src="@drawable/cict" />
+
+                <ImageView
+                    android:id="@+id/wvsu_logo"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="42dp"
+                    android:src="@drawable/wvsu" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="240dp"
+                android:layout_height="70dp"
+                android:src="@drawable/thesis_logo_2"
+                app:layout_constraintBottom_toTopOf="@id/detail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/logos_school" />
+
+            <TextView
+                android:id="@+id/detail"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:text="@string/thesis"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/logos_school" />
+
             <TextView
                 android:id="@+id/dev_team"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/abt_us"
+                android:text="Developers:"
                 android:textColor="@color/black"
                 android:layout_marginTop="20dp"
                 android:textSize="20sp"
                 android:textAlignment="center"
-                app:layout_constraintTop_toBottomOf="@id/team"/>
+                app:layout_constraintTop_toBottomOf="@id/detail"/>
 
             <TextView
                 android:id="@+id/team_members"
@@ -163,14 +197,16 @@
 
             <TextView
                 android:id="@+id/src_data"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="RESOURCES"
-                android:textColor="@color/black"
                 android:layout_marginTop="20dp"
-                android:textSize="20sp"
+                android:text="RESOURCES"
                 android:textAlignment="center"
-                app:layout_constraintTop_toBottomOf="@id/line6"/>
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/line6" />
 
             <TextView
                 android:id="@+id/link"
