@@ -13,9 +13,9 @@ The researchers aimed to develop a mobile application for Insect Pest Identifica
 
 Each one of the objectives were successfully achieved and tackled. 
 
-Folders: 
- /mobile_app- Insect Pest Identification with prescribe pesticide in Rice Fields using SSD MobileNet model on Deep Learning.
-\n/src- source code 
-\n/dist- Mobile App APK
-\n/doc- documents
-\n/store_assets- Mobile App icon
+Folders: <br>
+/mobile_app- Insect Pest Identification with prescribe pesticide in Rice Fields using SSD MobileNet model on Deep Learning.<br>
+/src- source code<br>
+/dist- Mobile App APK<br>
+/doc- documents<br>
+/store_assets- Mobile App icon<br>
