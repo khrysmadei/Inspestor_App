@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    tools:context=".LibPestInfo">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/spaceBar"
+        android:background="@color/title"
+        android:elevation="10dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingHorizontal="10dp"
+        android:elevation="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/spaceBar"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/back_btn"
+            android:layout_width="70dp"
+            android:layout_height="44dp"
+            android:clickable="true"
+            app:cardCornerRadius="15dp"
+            android:backgroundTint="@color/title"
+            app:cardElevation="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/back"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:tint="@color/white" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/nav_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Pest Information"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroller"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/img_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.limerse.slider.ImageCarousel
+                    android:id="@+id/carouselView"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    app:imageScaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:id="@+id/line"
+                app:layout_constraintTop_toBottomOf="@id/img_box"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linear"
+                app:layout_constraintTop_toBottomOf="@id/line">
+
+                <TextView
+                    android:id="@+id/pest_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="pestname"
+                    android:textColor="@color/title"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@id/pest_label">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pest_sci_title"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="20dp"
+                        android:text="Scientific Name"
+                        android:textColor="@color/title"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/roboto"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pest_sci_desc"
+                        android:fontFamily="@font/roboto"
+                        android:justificationMode="inter_word"
+                        android:paddingHorizontal="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="scientific"
+                        android:textStyle="italic"
+                        android:textColor="@color/title"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pest_identify_title"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="20dp"
+                        android:text="What it does"
+                        android:textColor="@color/title"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/roboto"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pest_identify_desc"
+                        android:fontFamily="@font/roboto"
+                        android:justificationMode="inter_word"
+                        android:paddingHorizontal="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="description"
+                        android:textColor="@color/title"
+                        android:textSize="15sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pest_imp_title"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="20dp"
+                        android:text="Pest Importance"
+                        android:textColor="@color/title"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/roboto"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pest_imp_desc"
+                        android:fontFamily="@font/roboto"
+                        android:justificationMode="inter_word"
+                        android:paddingHorizontal="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="description"
+                        android:textSize="15sp"
+                        android:textColor="@color/title"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pest_why_where"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="20dp"
+                        android:text="Why and where it occurs"
+                        android:textColor="@color/title"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/roboto"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pest_ww_desc"
+                        android:fontFamily="@font/roboto"
+                        android:justificationMode="inter_word"
+                        android:paddingHorizontal="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="description"
+                        android:textSize="15sp"
+                        android:textColor="@color/title"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pest_does_title"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="20dp"
+                        android:text="How to Identify Pest"
+                        android:textColor="@color/title"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/roboto"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pest_does_desc"
+                        android:fontFamily="@font/roboto"
+                        android:justificationMode="inter_word"
+                        android:paddingHorizontal="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="description"
+                        android:textSize="15sp"
+                        android:textColor="@color/title"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pest_mngmnt_title"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Management Recommendation"
+                        android:textSize="20sp"
+                        android:textColor="@color/title"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pest_mngmnt_desc"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="15sp"
+                        android:text="steps"
+                        android:justificationMode="inter_word"
+                        android:paddingHorizontal="20dp"
+                        android:paddingBottom="20dp"
+                        android:textColor="@color/title"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pest_rec_title"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Recommended Pesticide List"
+                        android:textSize="20sp"
+                        android:textColor="@color/title"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pest_rec_list"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="15sp"
+                        android:text="pesticide"
+                        android:justificationMode="inter_word"
+                        android:paddingHorizontal="20dp"
+                        android:paddingBottom="20dp"
+                        android:textColor="@color/title"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pest_acti_title"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Active Ingredients"
+                        android:textSize="20sp"
+                        android:textColor="@color/title"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pest_acti_list"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="15sp"
+                        android:text="pesticide"
+                        android:justificationMode="inter_word"
+                        android:paddingHorizontal="20dp"
+                        android:paddingBottom="20dp"
+                        android:textColor="@color/title"/>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/line2"
+                app:layout_constraintTop_toBottomOf="@id/linear"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

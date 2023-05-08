@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!--app background-->
+    <color name="app_bg">#f0f5ed</color>
+    <color name="clkble_bg">#FDF1E1</color>
+    <!--title text color green-->
+    <color name="title_color">#459354</color>
+    <color name="title">#2b2e4a</color>
+    <color name="green_1">#39b54a</color>
+    <color name="green_dark">#357736</color>
+    <color name="dark_grey">#5D5D5D</color>
+    <color name="back_grey">#d3d3d3</color>
+    <!--sub text color green-->
+    <color name="sub_color">#EBDC84</color>
+    <!--buttons-->
+    <color name="btn_orange">#f4d4cc</color>
+    <color name="button_orange">#1f3329</color>
+    <color name="btn_gal">#FCF6F5</color>
+
+    <!--camera-->
+    <color name="semiTransparentBlack">#88000000</color>
+    <!--new color-->
+    <color name="new_bg">#eaebf3</color>
+    <color name="orange1">#fc6e51</color>
+    <color name="orange2">#e9573f</color>
+    <color name="orange3">#FBCEB1</color>
+    <color name="orange4">#F2D2BD</color>
+    <color name="grey1">#f5f7fa</color>
+    <color name="grey2">#e6e9ed</color>
+
+    <color name="transparent">#262840</color>
+
+    <color name="green1">#222126</color>
+    <color name="green2">#73707E</color>
+    <color name="blue1">#5dbae4</color>
+    <color name="blue2">#a1e3e5</color>
+
+    <color name="stroke">#05c46b</color>
+
+
+    <color name="brownish">#3d3b30</color>
+    <color name="greenish">#B9F6CA</color>
+</resources>
