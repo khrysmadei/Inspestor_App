@@ -131,7 +131,7 @@ class MainActivity : AppCompatActivity() {
             //rec_act_ing_list.text=" "
             brand_name.text=" "
             binding.clickHere.text=""
-            result_insect.setTextColor(Color.RED)
+            result_insect.setTextColor(Color.BLACK)
             binding.cardResult.setOnClickListener{
                 Toast.makeText(this,"Not in the list", Toast.LENGTH_SHORT).show()
             }
